@@ -1,0 +1,2669 @@
+{
+  "metadata": {
+    "formatVersion": 1,
+    "nodeVersion": "v26.2.0",
+    "datasetSha256": "5aeaa43cc59aec81e0fa0050b6886f467526a33991eea101cc8b9b0f73d12f05",
+    "protocolFiles": [
+      {
+        "path": "src/core/engine.ts",
+        "sha256": "e39f67335451a49d1675b11f6ba99895049f96e5e22b32e5b813d15d47b6e2b3"
+      },
+      {
+        "path": "src/core/relations.ts",
+        "sha256": "60fde00c1b5dd8f8e4800cc1e33488eaaffdf9c732f22c060373f0ac8f06d10a"
+      },
+      {
+        "path": "src/core/expressions.ts",
+        "sha256": "c4ef19417e43ff0b05c780ddc06dcc3a0953e65921f4da8c5cd47e41faf733e9"
+      },
+      {
+        "path": "src/core/signatures.ts",
+        "sha256": "1d8cf6474bbecbc407e4d20534eda898c5bd65dd0208b92241ba68124864aaae"
+      },
+      {
+        "path": "src/core/detections.ts",
+        "sha256": "91461d1ae9e1f0dd47a193787820274bff478284756cdfca71b07da2614e437f"
+      },
+      {
+        "path": "src/core/prevalence.ts",
+        "sha256": "579fe223fda3c684ff38cb0525d5dcebda1a2a3289b755666331326c59357332"
+      },
+      {
+        "path": "src/core/groups.ts",
+        "sha256": "3fc828a63611319168c046b26f9e001afbc3f54545fad533097f5f2931d89b2c"
+      },
+      {
+        "path": "src/core/model.ts",
+        "sha256": "4beb700b287439b4cb9db8103390ec94b832db854d5c573cf8f66e6aded9cd76"
+      },
+      {
+        "path": "src/core/debug.ts",
+        "sha256": "31e37a7d9d12b40c932c93bb50ac1677e6741da845e0d3a84f72cf3a8cc8f595"
+      },
+      {
+        "path": "src/domains/presidents/index.ts",
+        "sha256": "2e5faaf2652e60b7e970367c0eade3c180cb42db2c8bfc712a21dafa491a51fc"
+      },
+      {
+        "path": "src/domains/presidents/model.ts",
+        "sha256": "f75bfd77160d3daa6dfc8dc3193f81bdf61fce75013745cfcc12fe7e162dbd7c"
+      },
+      {
+        "path": "src/domains/presidents/validate.ts",
+        "sha256": "fe2dd0667e649d533b059682ee5af158e23152dfc7d51cb1aa6babdc01bdbce8"
+      },
+      {
+        "path": "scripts/pair-experiment.ts",
+        "sha256": "00f303e6ccf3203770df942c8b9720a88520afe32875a12aed0d15a891de7ac5"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "sha256": "7076499a05c8d975c4ba2c4de8b0d7ba8b8c245b277db2b750261ca3ecfa7fe6"
+      }
+    ],
+    "datasetRetrievedAt": "2026-10-03T08:15:03.868Z",
+    "source": "https://millercenter.org/president",
+    "protocol": "CoincidenceEngine.analyze, default schema/detectors, exhaustive other pairs, byPrevalence",
+    "expressions": [
+      {
+        "node": {
+          "op": "field",
+          "field": "birthDate"
+        },
+        "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "birthDate",
+        "aliases": [
+          "birthDate"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "deathDate"
+        },
+        "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "deathDate",
+        "aliases": [
+          "deathDate"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "firstStart"
+        },
+        "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "firstStart",
+        "aliases": [
+          "firstStart"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "lastEnd"
+        },
+        "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "lastEnd",
+        "aliases": [
+          "lastEnd"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "birthPlace"
+        },
+        "id": "{\"field\":\"birthPlace\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "birthPlace",
+        "aliases": [
+          "birthPlace"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "partySummary"
+        },
+        "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "partySummary",
+        "aliases": [
+          "partySummary"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "religionSummary"
+        },
+        "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "religionSummary",
+        "aliases": [
+          "religionSummary"
+        ]
+      },
+      {
+        "node": {
+          "op": "field",
+          "field": "presidencyPeriods"
+        },
+        "id": "{\"field\":\"presidencyPeriods\",\"op\":\"field\"}",
+        "kind": "number",
+        "label": "presidencyPeriods",
+        "unit": "count",
+        "aliases": [
+          "presidencyPeriods"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(birthDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(birthDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(birthDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(deathDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(deathDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(deathDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(firstStart)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(firstStart)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(firstStart)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(lastEnd)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(lastEnd)"
+        ]
+      },
+      {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(lastEnd)"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "firstStart"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, firstStart)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"firstStart\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, firstStart)"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(firstStart))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(firstStart))"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "deathDate"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, deathDate)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"deathDate\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, deathDate)"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "deathDate"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(deathDate))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(deathDate))"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "to": {
+            "op": "field",
+            "field": "lastEnd"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(firstStart, lastEnd)",
+        "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(firstStart, lastEnd)"
+        ]
+      },
+      {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "lastEnd"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(firstStart), year(lastEnd))",
+        "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(firstStart), year(lastEnd))"
+        ]
+      }
+    ],
+    "population": [
+      {
+        "id": "washington",
+        "name": "George Washington"
+      },
+      {
+        "id": "adams",
+        "name": "John Adams"
+      },
+      {
+        "id": "jefferson",
+        "name": "Thomas Jefferson"
+      },
+      {
+        "id": "madison",
+        "name": "James Madison"
+      },
+      {
+        "id": "monroe",
+        "name": "James Monroe"
+      },
+      {
+        "id": "jqadams",
+        "name": "John Quincy Adams"
+      },
+      {
+        "id": "jackson",
+        "name": "Andrew Jackson"
+      },
+      {
+        "id": "vanburen",
+        "name": "Martin Van Buren"
+      },
+      {
+        "id": "harrison",
+        "name": "William Harrison"
+      },
+      {
+        "id": "tyler",
+        "name": "John Tyler"
+      },
+      {
+        "id": "polk",
+        "name": "James K. Polk"
+      },
+      {
+        "id": "taylor",
+        "name": "Zachary Taylor"
+      },
+      {
+        "id": "fillmore",
+        "name": "Millard Fillmore"
+      },
+      {
+        "id": "pierce",
+        "name": "Franklin Pierce"
+      },
+      {
+        "id": "buchanan",
+        "name": "James Buchanan"
+      },
+      {
+        "id": "lincoln",
+        "name": "Abraham Lincoln"
+      },
+      {
+        "id": "johnson",
+        "name": "Andrew Johnson"
+      },
+      {
+        "id": "grant",
+        "name": "Ulysses S. Grant"
+      },
+      {
+        "id": "hayes",
+        "name": "Rutherford B. Hayes"
+      },
+      {
+        "id": "garfield",
+        "name": "James A. Garfield"
+      },
+      {
+        "id": "arthur",
+        "name": "Chester A. Arthur"
+      },
+      {
+        "id": "cleveland",
+        "name": "Grover Cleveland"
+      },
+      {
+        "id": "bharrison",
+        "name": "Benjamin Harrison"
+      },
+      {
+        "id": "mckinley",
+        "name": "William McKinley"
+      },
+      {
+        "id": "roosevelt",
+        "name": "Theodore Roosevelt"
+      },
+      {
+        "id": "taft",
+        "name": "William Taft"
+      },
+      {
+        "id": "wilson",
+        "name": "Woodrow Wilson"
+      },
+      {
+        "id": "harding",
+        "name": "Warren G. Harding"
+      },
+      {
+        "id": "coolidge",
+        "name": "Calvin Coolidge"
+      },
+      {
+        "id": "hoover",
+        "name": "Herbert Hoover"
+      },
+      {
+        "id": "fdroosevelt",
+        "name": "Franklin D. Roosevelt"
+      },
+      {
+        "id": "truman",
+        "name": "Harry S. Truman"
+      },
+      {
+        "id": "eisenhower",
+        "name": "Dwight D. Eisenhower"
+      },
+      {
+        "id": "kennedy",
+        "name": "John F. Kennedy"
+      },
+      {
+        "id": "lbjohnson",
+        "name": "Lyndon B. Johnson"
+      },
+      {
+        "id": "nixon",
+        "name": "Richard Nixon"
+      },
+      {
+        "id": "ford",
+        "name": "Gerald Ford"
+      },
+      {
+        "id": "carter",
+        "name": "Jimmy Carter"
+      },
+      {
+        "id": "reagan",
+        "name": "Ronald Reagan"
+      },
+      {
+        "id": "bush",
+        "name": "George H. W. Bush"
+      },
+      {
+        "id": "clinton",
+        "name": "Bill Clinton"
+      },
+      {
+        "id": "gwbush",
+        "name": "George W. Bush"
+      },
+      {
+        "id": "obama",
+        "name": "Barack Obama"
+      },
+      {
+        "id": "trump",
+        "name": "Donald Trump"
+      },
+      {
+        "id": "biden",
+        "name": "Joe Biden"
+      }
+    ],
+    "target": [
+      "kennedy",
+      "lincoln"
+    ],
+    "thresholds": [
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ],
+    "thresholdMeaning": "Descriptive inclusive cutoffs on structural frequency, not significance tests"
+  },
+  "detections": [
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(lastEnd)"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "11",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "04",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "lastEnd"
+            },
+            "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "lastEnd",
+            "aliases": [
+              "lastEnd"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "lastEnd"
+              },
+              "part": "monthDay"
+            },
+            "kind": "category",
+            "label": "monthDay(lastEnd)",
+            "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+            "aliases": [
+              "monthDay(lastEnd)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 945,
+        "missingOtherGroups": 44,
+        "matches": 609,
+        "frequency": 0.6444444444444445,
+        "exactMatches": 609,
+        "exactFrequency": 0.6444444444444445
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(firstStart)"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "01",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "03",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "firstStart",
+            "aliases": [
+              "firstStart"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "firstStart"
+              },
+              "part": "monthDay"
+            },
+            "kind": "category",
+            "label": "monthDay(firstStart)",
+            "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+            "aliases": [
+              "monthDay(firstStart)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 650,
+        "frequency": 0.6572295247724975,
+        "exactMatches": 650,
+        "exactFrequency": 0.6572295247724975
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "lastEnd"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(firstStart), year(lastEnd))",
+        "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(firstStart), year(lastEnd))"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 2
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 2,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 4,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "firstStart"
+                },
+                "part": "year"
+              },
+              "to": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "lastEnd"
+                },
+                "part": "year"
+              }
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "interval(year(firstStart), year(lastEnd))",
+            "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+            "aliases": [
+              "interval(year(firstStart), year(lastEnd))"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 945,
+        "missingOtherGroups": 44,
+        "matches": 696,
+        "frequency": 0.7365079365079366,
+        "exactMatches": 107,
+        "exactFrequency": 0.11322751322751323
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "partySummary"
+        },
+        "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "partySummary",
+        "aliases": [
+          "partySummary"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "Democrat",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Political Party",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "Democrat"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "Whig; Republican",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Political Party",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "Whig; Republican"
+            }
+          ]
+        }
+      ],
+      "implications": [],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 738,
+        "frequency": 0.7462082912032356,
+        "exactMatches": 738,
+        "exactFrequency": 0.7462082912032356
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "religionSummary"
+        },
+        "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "religionSummary",
+        "aliases": [
+          "religionSummary"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "Roman Catholic",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Religion",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "Roman Catholic"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "No formal affiliation",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Religion",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "No formal affiliation"
+            }
+          ]
+        }
+      ],
+      "implications": [],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 881,
+        "frequency": 0.890798786653185,
+        "exactMatches": 881,
+        "exactFrequency": 0.890798786653185
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "to": {
+            "op": "field",
+            "field": "lastEnd"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(firstStart, lastEnd)",
+        "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(firstStart, lastEnd)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 467
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1036,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1503,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "field",
+                "field": "firstStart"
+              },
+              "to": {
+                "op": "field",
+                "field": "lastEnd"
+              }
+            },
+            "kind": "number",
+            "unit": "day",
+            "label": "interval(firstStart, lastEnd)",
+            "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
+            "aliases": [
+              "interval(firstStart, lastEnd)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 945,
+        "missingOtherGroups": 44,
+        "matches": 854,
+        "frequency": 0.9037037037037037,
+        "exactMatches": 1,
+        "exactFrequency": 0.0010582010582010583
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(deathDate)"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "11",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "04",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "deathDate"
+            },
+            "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "deathDate",
+            "aliases": [
+              "deathDate"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "deathDate"
+              },
+              "part": "monthDay"
+            },
+            "kind": "category",
+            "label": "monthDay(deathDate)",
+            "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+            "aliases": [
+              "monthDay(deathDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 779,
+        "missingOtherGroups": 210,
+        "matches": 709,
+        "frequency": 0.9101412066752247,
+        "exactMatches": 709,
+        "exactFrequency": 0.9101412066752247
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "presidencyPeriods"
+        },
+        "id": "{\"field\":\"presidencyPeriods\",\"op\":\"field\"}",
+        "kind": "number",
+        "label": "presidencyPeriods",
+        "unit": "count",
+        "aliases": [
+          "presidencyPeriods"
+        ]
+      },
+      "relation": "allEqual",
+      "signature": {
+        "parameters": {
+          "value": 1
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            }
+          ]
+        }
+      ],
+      "implications": [],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 903,
+        "frequency": 0.9130434782608695,
+        "exactMatches": 902,
+        "exactFrequency": 0.9120323559150657
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(birthDate)"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "05",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "02",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "birthDate",
+            "aliases": [
+              "birthDate"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "birthDate"
+              },
+              "part": "monthDay"
+            },
+            "kind": "category",
+            "label": "monthDay(birthDate)",
+            "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+            "aliases": [
+              "monthDay(birthDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 914,
+        "frequency": 0.9241658240647118,
+        "exactMatches": 914,
+        "exactFrequency": 0.9241658240647118
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(firstStart))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(firstStart))"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 8
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 44,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 52,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "part": "year"
+              },
+              "to": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "firstStart"
+                },
+                "part": "year"
+              }
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "interval(year(birthDate), year(firstStart))",
+            "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+            "aliases": [
+              "interval(year(birthDate), year(firstStart))"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 956,
+        "frequency": 0.9666329625884732,
+        "exactMatches": 58,
+        "exactFrequency": 0.05864509605662285
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "deathDate"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(deathDate))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(deathDate))"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 10
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 46,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 56,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "part": "year"
+              },
+              "to": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "part": "year"
+              }
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "interval(year(birthDate), year(deathDate))",
+            "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+            "aliases": [
+              "interval(year(birthDate), year(deathDate))"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 779,
+        "missingOtherGroups": 210,
+        "matches": 767,
+        "frequency": 0.9845956354300385,
+        "exactMatches": 35,
+        "exactFrequency": 0.044929396662387676
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(birthDate)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 108
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1917,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1809,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "birthDate"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(birthDate)",
+            "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(birthDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "birthDate",
+            "aliases": [
+              "birthDate"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 982,
+        "frequency": 0.9929221435793731,
+        "exactMatches": 3,
+        "exactFrequency": 0.003033367037411527
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(deathDate)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 98
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1963,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1865,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "deathDate"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(deathDate)",
+            "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(deathDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "deathDate"
+            },
+            "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "deathDate",
+            "aliases": [
+              "deathDate"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 779,
+        "missingOtherGroups": 210,
+        "matches": 776,
+        "frequency": 0.9961489088575096,
+        "exactMatches": 5,
+        "exactFrequency": 0.006418485237483954
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(lastEnd)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 98
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1963,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1865,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Date Ended",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "lastEnd"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(lastEnd)",
+            "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(lastEnd)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "lastEnd"
+            },
+            "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "lastEnd",
+            "aliases": [
+              "lastEnd"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 945,
+        "missingOtherGroups": 44,
+        "matches": 943,
+        "frequency": 0.9978835978835979,
+        "exactMatches": 1,
+        "exactFrequency": 0.0010582010582010583
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(firstStart)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 100
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 1961,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 1861,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "firstStart"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(firstStart)",
+            "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(firstStart)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+            "kind": "date",
+            "label": "firstStart",
+            "aliases": [
+              "firstStart"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 987,
+        "frequency": 0.9979777553083923,
+        "exactMatches": 15,
+        "exactFrequency": 0.015166835187057633
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "birthPlace"
+        },
+        "id": "{\"field\":\"birthPlace\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "birthPlace",
+        "aliases": [
+          "birthPlace"
+        ]
+      },
+      "relation": "allDistinct",
+      "signature": {
+        "parameters": {},
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": "Brookline, Massachusetts",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Place",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "Brookline, Massachusetts"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": "Hardin (now Larue) County, Kentucky",
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Place",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "Hardin (now Larue) County, Kentucky"
+            }
+          ]
+        }
+      ],
+      "implications": [],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 988,
+        "frequency": 0.9989888776541962,
+        "exactMatches": 988,
+        "exactFrequency": 0.9989888776541962
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "deathDate"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, deathDate)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"deathDate\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, deathDate)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 3538
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 16978,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "November 22, 1963"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 20516,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Death Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "April 15, 1865"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "field",
+                "field": "birthDate"
+              },
+              "to": {
+                "op": "field",
+                "field": "deathDate"
+              }
+            },
+            "kind": "number",
+            "unit": "day",
+            "label": "interval(birthDate, deathDate)",
+            "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"deathDate\",\"op\":\"field\"}}",
+            "aliases": [
+              "interval(birthDate, deathDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 779,
+        "missingOtherGroups": 210,
+        "matches": 779,
+        "frequency": 1,
+        "exactMatches": 0,
+        "exactFrequency": 0
+      }
+    },
+    {
+      "subjects": [
+        {
+          "id": "kennedy",
+          "label": "John F. Kennedy"
+        },
+        {
+          "id": "lincoln",
+          "label": "Abraham Lincoln"
+        }
+      ],
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "firstStart"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, firstStart)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"firstStart\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, firstStart)"
+        ]
+      },
+      "relation": "pairGap",
+      "signature": {
+        "parameters": {
+          "gap": 3071
+        },
+        "class": {}
+      },
+      "observations": [
+        {
+          "status": "known",
+          "value": 15942,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "May 29, 1917"
+            },
+            {
+              "url": "https://millercenter.org/president/kennedy",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "January 20, 1961"
+            }
+          ]
+        },
+        {
+          "status": "known",
+          "value": 19013,
+          "sources": [
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Birth Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "February 12, 1809"
+            },
+            {
+              "url": "https://millercenter.org/president/lincoln",
+              "locator": "Fast Facts / Inauguration Date",
+              "retrievedAt": "2026-10-03T08:15:03.868Z",
+              "raw": "March 4, 1861"
+            }
+          ]
+        }
+      ],
+      "implications": [
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "field",
+                "field": "birthDate"
+              },
+              "to": {
+                "op": "field",
+                "field": "firstStart"
+              }
+            },
+            "kind": "number",
+            "unit": "day",
+            "label": "interval(birthDate, firstStart)",
+            "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"firstStart\",\"op\":\"field\"}}",
+            "aliases": [
+              "interval(birthDate, firstStart)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          }
+        }
+      ],
+      "prevalence": {
+        "method": "exhaustive",
+        "reference": "other-groups-of-same-size",
+        "matching": "structural-class",
+        "totalOtherGroups": 989,
+        "eligibleOtherGroups": 989,
+        "missingOtherGroups": 0,
+        "matches": 989,
+        "frequency": 1,
+        "exactMatches": 0,
+        "exactFrequency": 0
+      }
+    }
+  ]
+}

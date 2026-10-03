@@ -1,9 +1,11 @@
-import { writeFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
 import { load } from 'cheerio'
 import { known, missing } from '../src/core/model.js'
 import type { Observation, Source } from '../src/core/model.js'
 import { validDate } from '../src/core/expressions.js'
 import type { President, PresidentDataset } from '../src/domains/presidents/model.js'
+import { validateDataset } from '../src/domains/presidents/validate.js'
 
 const origin = 'https://millercenter.org'
 const retrievedAt = new Date().toISOString()
@@ -106,8 +108,50 @@ async function main(): Promise<void> {
     retrievedAt,
     presidents,
   }
+  validateDataset(dataset)
+  if (process.argv.includes('--audit')) {
+    const snapshot = validateDataset(
+      JSON.parse(await readFile(new URL('../data/presidents.json', import.meta.url), 'utf8'))
+    )
+    const comparable = (p: President): unknown =>
+      JSON.parse(JSON.stringify(p, (key, value: unknown) => (key === 'sources' ? undefined : value))) as unknown
+    const differences = presidents.filter(
+      p =>
+        JSON.stringify(comparable(p)) !==
+        JSON.stringify(comparable(snapshot.presidents.find(old => old.id === p.id) ?? p))
+    )
+    const added = presidents.filter(p => !snapshot.presidents.some(old => old.id === p.id)).map(p => p.id)
+    const removed = snapshot.presidents.filter(p => !presidents.some(current => current.id === p.id)).map(p => p.id)
+    await writeFile(
+      new URL('../data/presidents-audit.json', import.meta.url),
+      `${JSON.stringify(
+        {
+          auditedAt: retrievedAt,
+          method:
+            'Same index, Fast Facts parser and collection rule for every president; values/status/reasons compared, provenance timestamps excluded',
+          snapshotSha256: createHash('sha256')
+            .update(await readFile(new URL('../data/presidents.json', import.meta.url)))
+            .digest('hex'),
+          added,
+          removed,
+          differences: differences.map(p => ({
+            id: p.id,
+            previous: snapshot.presidents.find(old => old.id === p.id),
+            current: p,
+          })),
+          checked: presidents.map(p => ({ id: p.id, observations: p })),
+        },
+        null,
+        2
+      )}\n`
+    )
+    console.log(
+      `Audited ${presidents.length} people: ${differences.length} changed, ${added.length} added, ${removed.length} removed`
+    )
+    return
+  }
   // Generate a reproducible data artifact only after the complete import succeeds.
-  await writeFile(new URL('../../data/presidents.json', import.meta.url), `${JSON.stringify(dataset, null, 2)}\n`)
+  await writeFile(new URL('../data/presidents.json', import.meta.url), `${JSON.stringify(dataset, null, 2)}\n`)
   console.log(
     `Imported ${presidents.length} people, ${presidents.reduce((sum, p) => sum + p.presidencies.length, 0)} presidencies; ${retrievedAt}`
   )

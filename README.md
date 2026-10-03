@@ -2,6 +2,12 @@
 
 Moteur TypeScript générique de détection de structures communes à **N instances, N ≥ 2**, avec signatures inspectables et prévalence empirique exhaustive. Les présidents américains sont un premier domaine de validation, pas un concept du noyau. Aucune narration, aucun score global, aucune recherche de coïncidences célèbres.
 
+## Expérience Lincoln-Kennedy (phase suivante)
+
+`pnpm experiment:pairs` reproduit hors ligne l'expérience sur le snapshot inchangé et les 990 paires présidentielles. Les sorties complètes JSON, JSONL gzip, CSV et texte sont dans [`data/pair-experiment/`](data/pair-experiment/). L'[analyse et la méthodologie](docs/lincoln-kennedy-experiment.md) documentent l'audit des 45 fiches, les contrôles, les dépendances et les limites. Le [corpus folklorique séparé](data/lincoln-kennedy-folklore.json) ne modifie pas le moteur. `pnpm audit:presidents` relit les sources sans écraser le snapshot.
+
+Résultat : 18 détections Lincoln-Kennedy, une seule égalité (périodes continues), aucune détection sous 10 % de prévalence structurelle. Aucun schéma, détecteur ou score n'a été adapté à la cible.
+
 ## Démarrer
 
 Node.js ≥ 22 et pnpm. Le snapshot est versionné : les tests et les explorations ne nécessitent aucun accès réseau.

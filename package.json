@@ -9,7 +9,9 @@
     "example": "pnpm build && node --import tsx scripts/example.ts",
     "explore": "pnpm build && node --import tsx scripts/explore.ts",
     "explore:save": "pnpm explore --save && pnpm explore adams monroe grant hoover carter --max-groups=1300000 --save=data/exploration-five-summary.json",
-    "import:presidents": "pnpm build && node scripts/import-presidents.ts"
+    "import:presidents": "pnpm build && node --import tsx scripts/import-presidents.ts",
+    "audit:presidents": "node --import tsx scripts/import-presidents.ts --audit",
+    "experiment:pairs": "node --import tsx scripts/pair-experiment.ts"
   },
   "exports": {
     ".": "./dist/src/index.js",

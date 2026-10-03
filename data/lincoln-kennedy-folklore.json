@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-03",
+  "collectionOrder": "Collected only after the main 990-pair experiment completed. Never imported by the presidential domain or engine.",
+  "scope": "Corpus raisonné de 24 affirmations et variantes, non exhaustif des versions de la légende. Les formulations sont des paraphrases, non des citations.",
+  "classification": {
+    "1": "Détectée naturellement, sur la bonne paire et sans substituer un autre événement.",
+    "2": "Représentable conceptuellement par des observations scalaires et les relations existantes, mais données absentes du domaine. Ceci ne constitue pas une autorisation de les ajouter.",
+    "3": "La formulation exige une transformation, une jointure, un alignement ou une comparaison non offerts par le vocabulaire actuel.",
+    "4": "Formulation arbitraire, sélection de noms, granularité ou catégories trop spécifiques.",
+    "5": "Factuellement incorrecte. Le statut non vérifiable est distingué du faux et ne suffit pas pour appliquer 5."
+  },
+  "classificationPolicy": "Les codes peuvent se cumuler. Le code 2 concerne un manque de données scalaires, le code 3 un manque de langage. Aucun champ, relation ou score n'est ajouté. Une détection sur Andrew et Lyndon Johnson n'est pas une détection Lincoln-Kennedy.",
+  "sources": {
+    "time1964": {
+      "url": "https://content.time.com/time/subscriber/article/0,33009,876021,00.html",
+      "title": "Historical Notes: A Compendium of Curious Coincidences",
+      "publishedOn": "1964-08-21",
+      "accessedOn": "2026-10-03",
+      "role": "Attestation ancienne de circulation, pas autorité factuelle suffisante"
+    },
+    "legend": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Lincoln%E2%80%93Kennedy_coincidences_urban_legend&oldid=1376182684",
+      "title": "Lincoln-Kennedy coincidences urban legend",
+      "accessedOn": "2026-10-03",
+      "role": "Inventaire secondaire de variantes, non source principale de vérification"
+    },
+    "lincoln": {
+      "url": "https://millercenter.org/president/lincoln",
+      "title": "Abraham Lincoln, Fast Facts",
+      "accessedOn": "2026-10-03"
+    },
+    "kennedy": {
+      "url": "https://millercenter.org/president/kennedy",
+      "title": "John F. Kennedy, Fast Facts",
+      "accessedOn": "2026-10-03"
+    },
+    "lincolnBefore": {
+      "url": "https://millercenter.org/president/lincoln/life-before-the-presidency",
+      "title": "Abraham Lincoln: Life Before the Presidency",
+      "accessedOn": "2026-10-03"
+    },
+    "kennedyBefore": {
+      "url": "https://millercenter.org/president/kennedy/life-before-the-presidency",
+      "title": "John F. Kennedy: Life Before the Presidency",
+      "accessedOn": "2026-10-03"
+    },
+    "kennedyElection": {
+      "url": "https://millercenter.org/president/kennedy/campaigns-and-elections",
+      "title": "John F. Kennedy: Campaigns and Elections",
+      "accessedOn": "2026-10-03"
+    },
+    "willie": {
+      "url": "https://home.nps.gov/liho/learn/historyculture/willie.htm",
+      "title": "William Wallace Willie Lincoln",
+      "accessedOn": "2026-10-03"
+    },
+    "jacqueline": {
+      "url": "https://www.jfklibrary.org/learn/about-jfk/life-of-jacqueline-b-kennedy",
+      "title": "Life of Jacqueline B. Kennedy",
+      "accessedOn": "2026-10-03"
+    },
+    "fordShot": {
+      "url": "https://fords.org/lincolns-assassination/",
+      "title": "Lincoln's Assassination",
+      "accessedOn": "2026-10-03"
+    },
+    "lincolnDeath": {
+      "url": "https://millercenter.org/president/lincoln/death-of-the-president",
+      "title": "Abraham Lincoln: Death of the President",
+      "accessedOn": "2026-10-03"
+    },
+    "jfkDeath": {
+      "url": "https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/november-22-1963-death-of-the-president",
+      "title": "November 22, 1963: Death of the President",
+      "accessedOn": "2026-10-03"
+    },
+    "booth": {
+      "url": "https://www.nps.gov/people/john-wilkes-booth.htm",
+      "title": "John Wilkes Booth, NPS",
+      "accessedOn": "2026-10-03"
+    },
+    "boothDeath": {
+      "url": "https://fords.org/lincolns-assassination/material-evidence-john-wilkes-booth/",
+      "title": "Material Evidence: John Wilkes Booth",
+      "accessedOn": "2026-10-03"
+    },
+    "oswaldBirth": {
+      "url": "https://www.archives.gov/research/jfk/select-committee-report/part-1a.html",
+      "title": "HSCA findings, Biography of Lee Harvey Oswald",
+      "accessedOn": "2026-10-03"
+    },
+    "oswaldDeath": {
+      "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-5.html",
+      "title": "Warren Commission, Detention and Death of Oswald",
+      "accessedOn": "2026-10-03"
+    },
+    "andrew": {
+      "url": "https://millercenter.org/president/johnson",
+      "title": "Andrew Johnson, Fast Facts",
+      "accessedOn": "2026-10-03"
+    },
+    "lyndon": {
+      "url": "https://millercenter.org/president/lbjohnson",
+      "title": "Lyndon B. Johnson, Fast Facts",
+      "accessedOn": "2026-10-03"
+    },
+    "secretaries": {
+      "url": "https://www.loc.gov/item/2008680250/",
+      "title": "Lincoln and his secretaries, Nicolay and Hay",
+      "accessedOn": "2026-10-03"
+    },
+    "evelyn": {
+      "url": "https://www.archives.gov/publications/prologue/2006/summer/camelot.html",
+      "title": "Reclaiming Pieces of Camelot",
+      "accessedOn": "2026-10-03"
+    },
+    "limousine": {
+      "url": "https://www.thehenryford.org/collections/explore/popular-research-topics/kennedy-presidential-limousine",
+      "title": "Kennedy Presidential Limousine",
+      "accessedOn": "2026-10-03"
+    },
+    "patrick": {
+      "url": "https://prod.millercenter.org/president/kennedy/family-life",
+      "title": "John F. Kennedy: Family Life",
+      "accessedOn": "2026-10-03"
+    },
+    "monroe": {
+      "url": "https://time.com/3984289/marilyn-monroe-obituary/",
+      "title": "Read Marilyn Monroe's Obituary From 1962",
+      "accessedOn": "2026-10-03"
+    }
+  },
+  "claims": [
+    {
+      "id": "presidential-elections",
+      "claim": "Élus présidents en 1860 et 1960, à un siècle d'écart.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Les années d'élection sont confirmées par les biographies. Elles ne sont pas les dates d'entrée en fonction.",
+      "evidence": [
+        { "source": "lincoln", "locator": "Overview et Candidate Lincoln" },
+        { "source": "kennedyElection", "locator": "The Campaign and Election of 1960" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "pairGap sur une année d'élection serait possible, mais ce champ est absent. year(firstStart) détecte 100 entre 1861 et 1961, avec prévalence structurelle 987/989 et exacte 15/989. Ce n'est pas la même affirmation."
+    },
+    {
+      "id": "congress-elections",
+      "claim": "Élus à la Chambre en 1846 et 1946.",
+      "circulation": ["legend"],
+      "verdict": "exacte",
+      "verification": "Élections de 1846 et 1946 ; les entrées ont lieu en 1847 et 1947.",
+      "evidence": [
+        { "source": "lincolnBefore", "locator": "Taking Political Risks" },
+        { "source": "kennedyBefore", "locator": "The Political Climb" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "Année de première élection à la Chambre absente ; pairGap pourrait représenter l'écart de 100 sans lui attribuer une classe spéciale."
+    },
+    {
+      "id": "surname-length",
+      "claim": "Les deux noms de famille comptent sept lettres.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Comptage des lettres de Lincoln et Kennedy, pas des noms complets.",
+      "evidence": [
+        { "source": "lincoln", "locator": "Titre" },
+        { "source": "kennedy", "locator": "Titre et Full Name" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Aucune extraction de patronyme ni longueur de texte. Les labels ne sont pas des observations."
+    },
+    {
+      "id": "civil-rights",
+      "claim": "Tous deux particulièrement engagés pour les droits civiques.",
+      "circulation": ["time1964"],
+      "verdict": "approximative",
+      "verification": "L'émancipation et l'égalité raciale sont pertinentes, mais ce résumé gomme des trajectoires historiques différentes.",
+      "evidence": [
+        { "source": "lincolnBefore", "locator": "Limited Racial Equality" },
+        { "source": "kennedy", "locator": "June 11, 1963: Address on Civil Rights" }
+      ],
+      "codes": [4],
+      "detectedNaturally": false,
+      "mapping": "Pas de mesure opérationnelle homogène de particulièrement engagé. Une catégorie choisie après lecture des deux biographies serait arbitraire."
+    },
+    {
+      "id": "shot-friday",
+      "claim": "Les deux ont reçu les coups de feu un vendredi.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "14 avril 1865 et 22 novembre 1963. Lincoln meurt le lendemain.",
+      "evidence": [
+        { "source": "fordShot", "locator": "Good Friday et Events of April 14th" },
+        { "source": "jfkDeath", "locator": "Morning in Fort Worth et The Assassination" }
+      ],
+      "codes": [3],
+      "detectedNaturally": false,
+      "mapping": "Date du tir absente et projection weekday non disponible. monthDay n'est pas le jour de la semaine."
+    },
+    {
+      "id": "died-friday",
+      "claim": "Tous deux morts un vendredi.",
+      "circulation": ["legend"],
+      "verdict": "fausse",
+      "verification": "Lincoln décède samedi 15 avril 1865 ; Kennedy vendredi 22 novembre 1963.",
+      "evidence": [
+        { "source": "lincoln", "locator": "Death Date" },
+        { "source": "lincolnDeath", "locator": "Décès le lendemain matin" },
+        { "source": "jfkDeath", "locator": "The Assassination" }
+      ],
+      "codes": [3, 5],
+      "detectedNaturally": false,
+      "mapping": "Le domaine contient le décès mais pas weekday ; ne pas remplacer décès par tir pour obtenir une égalité."
+    },
+    {
+      "id": "head-wounds",
+      "claim": "Tous deux touchés à la tête.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Les deux récits institutionnels confirment une blessure à la tête.",
+      "evidence": [
+        { "source": "lincolnDeath", "locator": "Tir dans la tête" },
+        { "source": "jfkDeath", "locator": "The Assassination, neck and head" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "Une observation booléenne générique sur les blessures pourrait être comparée par allEqual, mais elle n'existe pas."
+    },
+    {
+      "id": "wives-present",
+      "claim": "Leurs épouses étaient présentes lors des tirs.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Mary dans la loge, Jacqueline dans la limousine.",
+      "evidence": [
+        { "source": "lincolnDeath", "locator": "Mary Todd Lincoln" },
+        { "source": "jfkDeath", "locator": "On to Dallas et The Assassination" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "Booléen scalaire conceptuellement comparable ; aucune observation de circonstance du tir dans le domaine."
+    },
+    {
+      "id": "child-during-presidency",
+      "claim": "Chaque famille a perdu un fils pendant la présidence.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Willie en 1862, Patrick en 1963 ; situations et âges différents.",
+      "evidence": [
+        { "source": "lincoln", "locator": "Children" },
+        { "source": "patrick", "locator": "Premier paragraphe" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "Un booléen homogène pourrait représenter cette propriété. Le moteur n'aligne pas les listes d'enfants et aucune donnée familiale n'est importée."
+    },
+    {
+      "id": "child-in-white-house",
+      "claim": "Les deux fils sont morts dans la Maison-Blanche.",
+      "circulation": ["legend"],
+      "verdict": "trompeuse",
+      "verification": "Vrai pendant la présidence, faux comme lieu physique : Willie meurt à la Maison-Blanche, Patrick au Children's Hospital de Boston.",
+      "evidence": [
+        { "source": "willie", "locator": "Décès le 20 février 1862" },
+        { "source": "jacqueline", "locator": "Naissance et décès de Patrick" }
+      ],
+      "codes": [4, 5],
+      "detectedNaturally": false,
+      "mapping": "Ne pas transformer une temporalité en identité de lieu. Le code 5 s'applique à la lecture littérale de cette variante."
+    },
+    {
+      "id": "successor-surname",
+      "claim": "Leurs successeurs portent le nom Johnson.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Andrew Johnson et Lyndon B. Johnson.",
+      "evidence": [
+        { "source": "andrew", "locator": "Overview et Inauguration Date" },
+        { "source": "jfkDeath", "locator": "Serment de Johnson" }
+      ],
+      "codes": [3],
+      "detectedNaturally": false,
+      "mapping": "Pas de jointure successor ni d'extraction de nom de famille. Les métadonnées de présidence permettent une lecture humaine, pas cette expression."
+    },
+    {
+      "id": "successor-birth-century",
+      "claim": "Les successeurs sont nés en 1808 et 1908.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "29 décembre 1808 et 27 août 1908.",
+      "evidence": [
+        { "source": "andrew", "locator": "Birth Date" },
+        { "source": "lyndon", "locator": "Birth Date" }
+      ],
+      "codes": [3],
+      "detectedNaturally": false,
+      "mapping": "Données présentes pour les Johnson, mais la jointure vers les successeurs n'existe pas. Sur la paire johnson/lbjohnson le moteur détecte naturellement year(birthDate)/pairGap/gap=100 ; pas sur Lincoln-Kennedy."
+    },
+    {
+      "id": "successor-south",
+      "claim": "Les deux successeurs sont des démocrates du Sud.",
+      "circulation": ["time1964"],
+      "verdict": "approximative",
+      "verification": "Johnson est associé au Tennessee, Lyndon au Texas. Le résumé de parti d'Andrew est Democrat; Unionist, pas le même libellé que celui de Lyndon.",
+      "evidence": [
+        { "source": "andrew", "locator": "Overview, Birth Place, Political Party" },
+        { "source": "lyndon", "locator": "Birth Place, Political Party" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Jointure, définition du Sud et reclassification historique des partis absentes. Le lieu de naissance d'Andrew est Raleigh, pas Tennessee."
+    },
+    {
+      "id": "successor-first-name-length",
+      "claim": "Andrew et Lyndon comptent six lettres.",
+      "circulation": ["legend"],
+      "verdict": "exacte",
+      "verification": "Six lettres dans ces seuls prénoms, en excluant les autres éléments du nom.",
+      "evidence": [
+        { "source": "andrew", "locator": "Titre" },
+        { "source": "lyndon", "locator": "Titre" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Jointure et longueur textuelle absentes ; choix du prénom plutôt que du nom complet."
+    },
+    {
+      "id": "assassin-birth-century",
+      "claim": "Booth et Oswald sont nés en 1839 et 1939.",
+      "circulation": ["time1964"],
+      "verdict": "fausse",
+      "verification": "Booth : 10 mai 1838. Oswald : 18 octobre 1939. Écart d'années : 101.",
+      "evidence": [
+        { "source": "booth", "locator": "Quick Facts" },
+        { "source": "oswaldBirth", "locator": "Biography of Lee Harvey Oswald" }
+      ],
+      "codes": [2, 5],
+      "detectedNaturally": false,
+      "mapping": "Les observations numériques manquent ; les données exactes ne produiraient pas l'écart de 100 annoncé."
+    },
+    {
+      "id": "assassin-three-names",
+      "claim": "Les assassins sont désignés par trois éléments de nom.",
+      "circulation": ["legend"],
+      "verdict": "exacte",
+      "verification": "John Wilkes Booth et Lee Harvey Oswald sont des désignations documentées.",
+      "evidence": [
+        { "source": "booth", "locator": "Titre" },
+        { "source": "oswaldBirth", "locator": "Biography of Lee Harvey Oswald" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Pas de tokenize/count ni d'accès aux auteurs des tirs ; on choisit une désignation complète contrairement aux seuls patronymes des présidents."
+    },
+    {
+      "id": "assassin-name-length",
+      "claim": "Ces deux désignations d'assassins comptent quinze lettres.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "4+6+5 et 3+6+6, sans espaces.",
+      "evidence": [
+        { "source": "booth", "locator": "Titre" },
+        { "source": "oswaldBirth", "locator": "Biography of Lee Harvey Oswald" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Comptage de lettres absent ; exclusion des espaces et sélection de la forme du nom. Redondant avec la désignation à trois noms."
+    },
+    {
+      "id": "assassin-south",
+      "claim": "Les deux assassins viennent du Sud.",
+      "circulation": ["legend"],
+      "verdict": "approximative",
+      "verification": "Booth est né au Maryland, Oswald en Louisiane. Assimiler Maryland, sympathie confédérée et origine sudiste nécessite une convention.",
+      "evidence": [
+        { "source": "booth", "locator": "Place of Birth" },
+        { "source": "oswaldBirth", "locator": "Biography of Lee Harvey Oswald" }
+      ],
+      "codes": [2, 4],
+      "detectedNaturally": false,
+      "mapping": "Données d'assassins absentes et catégorie Sud non définie ; aucun géocodage ou regroupement géographique actuel."
+    },
+    {
+      "id": "assassins-before-trial",
+      "claim": "Les deux auteurs présumés sont tués avant leur procès.",
+      "circulation": ["time1964"],
+      "verdict": "exacte",
+      "verification": "Booth est mort le 26 avril 1865 ; Oswald est tué par Ruby le 24 novembre 1963.",
+      "evidence": [
+        { "source": "boothDeath", "locator": "Capture dans la grange" },
+        { "source": "oswaldDeath", "locator": "Ouverture du chapitre" }
+      ],
+      "codes": [2],
+      "detectedNaturally": false,
+      "mapping": "Une propriété booléenne homogène pourrait être comparée ; aucun dataset des auteurs ni déroulement judiciaire dans le domaine."
+    },
+    {
+      "id": "theater-warehouse",
+      "claim": "Fuite théâtre-entrepôt pour Booth, entrepôt-théâtre pour Oswald.",
+      "circulation": ["time1964"],
+      "verdict": "fausse",
+      "verification": "Booth est trouvé dans une grange, pas un entrepôt. Oswald est arrêté au Texas Theatre.",
+      "evidence": [
+        { "source": "boothDeath", "locator": "Barn near Port Royal" },
+        { "source": "oswaldDeath", "locator": "Chronology, Texas Theatre" }
+      ],
+      "codes": [3, 4, 5],
+      "detectedNaturally": false,
+      "mapping": "Pas d'alignement inversé de rôles ; glissement lexical nécessaire de grange à entrepôt, cinéma à théâtre."
+    },
+    {
+      "id": "secretary-swap",
+      "claim": "Lincoln aurait un secrétaire Kennedy et Kennedy une secrétaire Lincoln.",
+      "circulation": ["legend"],
+      "verdict": "fausse",
+      "verification": "Evelyn Lincoln est attestée ; les secrétaires privés documentés de Lincoln sont Nicolay et Hay.",
+      "evidence": [
+        { "source": "secretaries", "locator": "Summary" },
+        { "source": "evelyn", "locator": "Evelyn Lincoln, former secretary" }
+      ],
+      "codes": [3, 5],
+      "detectedNaturally": false,
+      "mapping": "Pas de comparaison croisée entre noms des sujets et personnel. La moitié exacte ne valide pas le couple."
+    },
+    {
+      "id": "secretary-warning",
+      "claim": "Leurs secrétaires leur auraient déconseillé le déplacement fatal.",
+      "circulation": ["legend"],
+      "verdict": "non_verifiable",
+      "verification": "Ce corpus n'a pas de témoignage primaire vérifié pour les deux avertissements précis. La version attribuée à un secrétaire Kennedy de Lincoln hérite déjà d'une fausse identification.",
+      "evidence": [
+        { "source": "secretaries", "locator": "Summary" },
+        { "source": "legend", "locator": "List et False assumption, avertissement attribué à Crook" }
+      ],
+      "codes": [2, 4],
+      "detectedNaturally": false,
+      "mapping": "Absence de données testimoniales homogènes ; avertissements vagues ou rétrospectifs. Ne pas conclure faux uniquement parce qu'une vérification manque."
+    },
+    {
+      "id": "ford-lincoln-wordplay",
+      "claim": "Ford pour le théâtre de Lincoln, Ford et Lincoln pour la voiture de Kennedy.",
+      "circulation": ["time1964"],
+      "verdict": "trompeuse",
+      "verification": "Ford's Theatre et Lincoln Continental construite par Ford sont exacts, mais les mots désignent des entités et des rôles différents.",
+      "evidence": [
+        { "source": "fordShot", "locator": "Ford's Theatre" },
+        { "source": "limousine", "locator": "Make and model ; Who built the car?" }
+      ],
+      "codes": [3, 4],
+      "detectedNaturally": false,
+      "mapping": "Pas de sous-chaînes ni d'équivalence entre nom de bâtiment, constructeur et marque. Lincoln est blessé au théâtre mais décède ailleurs."
+    },
+    {
+      "id": "monroe-week",
+      "claim": "Une semaine avant : Lincoln à Monroe, Kennedy avec Marilyn Monroe.",
+      "circulation": ["legend"],
+      "verdict": "fausse",
+      "verification": "Marilyn Monroe est morte en août 1962, bien avant novembre 1963. La partie Kennedy suffit à réfuter la conjonction ; le déplacement précis de Lincoln n'est pas vérifié ici.",
+      "evidence": [
+        { "source": "monroe", "locator": "Date du décès, ouverture" },
+        { "source": "kennedy", "locator": "Death Date" }
+      ],
+      "codes": [3, 4, 5],
+      "detectedNaturally": false,
+      "mapping": "Homonymie et fenêtre d'une semaine choisies pour le jeu de mots ; aucune relation actuelle correspondante."
+    }
+  ]
+}

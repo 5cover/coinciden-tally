@@ -1,0 +1,594 @@
+{
+  "datasetSha256": "5aeaa43cc59aec81e0fa0050b6886f467526a33991eea101cc8b9b0f73d12f05",
+  "coverage": [
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "birthDate"
+        },
+        "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "birthDate",
+        "aliases": [
+          "birthDate"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "deathDate"
+        },
+        "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "deathDate",
+        "aliases": [
+          "deathDate"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "firstStart"
+        },
+        "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "firstStart",
+        "aliases": [
+          "firstStart"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "lastEnd"
+        },
+        "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+        "kind": "date",
+        "label": "lastEnd",
+        "aliases": [
+          "lastEnd"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "birthPlace"
+        },
+        "id": "{\"field\":\"birthPlace\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "birthPlace",
+        "aliases": [
+          "birthPlace"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "partySummary"
+        },
+        "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "partySummary",
+        "aliases": [
+          "partySummary"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "religionSummary"
+        },
+        "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
+        "kind": "category",
+        "label": "religionSummary",
+        "aliases": [
+          "religionSummary"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "field",
+          "field": "presidencyPeriods"
+        },
+        "id": "{\"field\":\"presidencyPeriods\",\"op\":\"field\"}",
+        "kind": "number",
+        "label": "presidencyPeriods",
+        "unit": "count",
+        "aliases": [
+          "presidencyPeriods"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(birthDate)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(birthDate)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(birthDate)",
+        "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(birthDate)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(deathDate)"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(deathDate)"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "deathDate"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(deathDate)",
+        "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(deathDate)"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(firstStart)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(firstStart)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(firstStart)",
+        "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(firstStart)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "year"
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "year(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+        "aliases": [
+          "year(lastEnd)"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "month"
+        },
+        "kind": "category",
+        "label": "month(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
+        "aliases": [
+          "month(lastEnd)"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "datePart",
+          "input": {
+            "op": "field",
+            "field": "lastEnd"
+          },
+          "part": "monthDay"
+        },
+        "kind": "category",
+        "label": "monthDay(lastEnd)",
+        "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+        "aliases": [
+          "monthDay(lastEnd)"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "firstStart"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, firstStart)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"firstStart\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, firstStart)"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(firstStart))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(firstStart))"
+        ]
+      },
+      "known": 45,
+      "missingIds": []
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "birthDate"
+          },
+          "to": {
+            "op": "field",
+            "field": "deathDate"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(birthDate, deathDate)",
+        "id": "{\"from\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"deathDate\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(birthDate, deathDate)"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "birthDate"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "deathDate"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(birthDate), year(deathDate))",
+        "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(birthDate), year(deathDate))"
+        ]
+      },
+      "known": 40,
+      "missingIds": [
+        "clinton",
+        "gwbush",
+        "obama",
+        "trump",
+        "biden"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "field",
+            "field": "firstStart"
+          },
+          "to": {
+            "op": "field",
+            "field": "lastEnd"
+          }
+        },
+        "kind": "number",
+        "unit": "day",
+        "label": "interval(firstStart, lastEnd)",
+        "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
+        "aliases": [
+          "interval(firstStart, lastEnd)"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    },
+    {
+      "expression": {
+        "node": {
+          "op": "interval",
+          "from": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "firstStart"
+            },
+            "part": "year"
+          },
+          "to": {
+            "op": "datePart",
+            "input": {
+              "op": "field",
+              "field": "lastEnd"
+            },
+            "part": "year"
+          }
+        },
+        "kind": "number",
+        "unit": "year",
+        "label": "interval(year(firstStart), year(lastEnd))",
+        "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+        "aliases": [
+          "interval(year(firstStart), year(lastEnd))"
+        ]
+      },
+      "known": 44,
+      "missingIds": [
+        "trump"
+      ]
+    }
+  ]
+}

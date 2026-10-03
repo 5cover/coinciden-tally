@@ -1,0 +1,163 @@
+Target: lincoln, kennedy; 990 pairs; 18 detections
+
+John F. Kennedy, Abraham Lincoln
+expression: month(lastEnd)
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 64.44% (609/945; missing 44)
+exact prevalence: 64.44%
+implies:
+  - lastEnd / allDistinct
+  - monthDay(lastEnd) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: month(firstStart)
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 65.72% (650/989; missing 0)
+exact prevalence: 65.72%
+implies:
+  - firstStart / allDistinct
+  - monthDay(firstStart) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(year(firstStart), year(lastEnd))
+relation: pairGap
+signature: {"parameters":{"gap":2},"class":{}}
+prevalence: 73.65% (696/945; missing 44)
+exact prevalence: 11.32%
+implies:
+  - interval(year(firstStart), year(lastEnd)) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: partySummary
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 74.62% (738/989; missing 0)
+exact prevalence: 74.62%
+
+John F. Kennedy, Abraham Lincoln
+expression: religionSummary
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 89.08% (881/989; missing 0)
+exact prevalence: 89.08%
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(firstStart, lastEnd)
+relation: pairGap
+signature: {"parameters":{"gap":467},"class":{}}
+prevalence: 90.37% (854/945; missing 44)
+exact prevalence: 0.11%
+implies:
+  - interval(firstStart, lastEnd) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: month(deathDate)
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 91.01% (709/779; missing 210)
+exact prevalence: 91.01%
+implies:
+  - deathDate / allDistinct
+  - monthDay(deathDate) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: presidencyPeriods
+relation: allEqual
+signature: {"parameters":{"value":1},"class":{}}
+prevalence: 91.30% (903/989; missing 0)
+exact prevalence: 91.20%
+
+John F. Kennedy, Abraham Lincoln
+expression: month(birthDate)
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 92.42% (914/989; missing 0)
+exact prevalence: 92.42%
+implies:
+  - birthDate / allDistinct
+  - monthDay(birthDate) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(year(birthDate), year(firstStart))
+relation: pairGap
+signature: {"parameters":{"gap":8},"class":{}}
+prevalence: 96.66% (956/989; missing 0)
+exact prevalence: 5.86%
+implies:
+  - interval(year(birthDate), year(firstStart)) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(year(birthDate), year(deathDate))
+relation: pairGap
+signature: {"parameters":{"gap":10},"class":{}}
+prevalence: 98.46% (767/779; missing 210)
+exact prevalence: 4.49%
+implies:
+  - interval(year(birthDate), year(deathDate)) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: year(birthDate)
+relation: pairGap
+signature: {"parameters":{"gap":108},"class":{}}
+prevalence: 99.29% (982/989; missing 0)
+exact prevalence: 0.30%
+implies:
+  - year(birthDate) / allDistinct
+  - birthDate / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: year(deathDate)
+relation: pairGap
+signature: {"parameters":{"gap":98},"class":{}}
+prevalence: 99.61% (776/779; missing 210)
+exact prevalence: 0.64%
+implies:
+  - year(deathDate) / allDistinct
+  - deathDate / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: year(lastEnd)
+relation: pairGap
+signature: {"parameters":{"gap":98},"class":{}}
+prevalence: 99.79% (943/945; missing 44)
+exact prevalence: 0.11%
+implies:
+  - year(lastEnd) / allDistinct
+  - lastEnd / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: year(firstStart)
+relation: pairGap
+signature: {"parameters":{"gap":100},"class":{}}
+prevalence: 99.80% (987/989; missing 0)
+exact prevalence: 1.52%
+implies:
+  - year(firstStart) / allDistinct
+  - firstStart / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: birthPlace
+relation: allDistinct
+signature: {"parameters":{},"class":{}}
+prevalence: 99.90% (988/989; missing 0)
+exact prevalence: 99.90%
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(birthDate, deathDate)
+relation: pairGap
+signature: {"parameters":{"gap":3538},"class":{}}
+prevalence: 100.00% (779/779; missing 210)
+exact prevalence: 0.00%
+implies:
+  - interval(birthDate, deathDate) / allDistinct
+
+John F. Kennedy, Abraham Lincoln
+expression: interval(birthDate, firstStart)
+relation: pairGap
+signature: {"parameters":{"gap":3071},"class":{}}
+prevalence: 100.00% (989/989; missing 0)
+exact prevalence: 0.00%
+implies:
+  - interval(birthDate, firstStart) / allDistinct
