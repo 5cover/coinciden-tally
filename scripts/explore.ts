@@ -63,6 +63,7 @@ else {
     console.log(
       `\nGroup ${result.ids.join(', ')}: ${result.detections.length} detections, sorted by structural prevalence`
     )
-    for (const detection of result.detections.slice(0, 8)) console.log(`\n${debugDetection(detection)}`)
+    for (const detection of result.detections.slice(0, 8))
+      console.log(`\n${debugDetection(detection, result.detections)}`)
   }
 }

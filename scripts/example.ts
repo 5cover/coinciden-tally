@@ -42,4 +42,4 @@ const domain: Domain<Person> = {
 const engine = new CoincidenceEngine(domain)
 const detections = engine.analyze(['a', 'b', 'c'])
 console.log('Groupe analysé : a, b, c. Comparaison avec les autres triplets, groupe cible exclu.')
-for (const detection of detections) console.log(`\n${debugDetection(detection)}`)
+for (const detection of detections) console.log(`\n${debugDetection(detection, detections)}`)

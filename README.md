@@ -70,7 +70,7 @@ const domain: Domain<Person> = {
 const engine = new CoincidenceEngine(domain)
 const detections = engine.analyze(['a', 'b', 'c'])
 console.log('Groupe analysé : a, b, c. Comparaison avec les autres triplets, groupe cible exclu.')
-for (const detection of detections) console.log(`\n${debugDetection(detection)}`)
+for (const detection of detections) console.log(`\n${debugDetection(detection, detections)}`)
 ```
 
 L'exécution affiche quatre détections, triées par prévalence structurelle croissante :
@@ -118,6 +118,8 @@ Une `Observation` est soit `{ status: 'known', value, sources }`, soit `{ status
 Une `Detection` contient les sujets, l'expression canonique et ses alias, la relation, la signature, les observations évaluées dans l'ordre des sujets, les implications manifestes et éventuellement la prévalence. Les observations dérivées conservent les sources des operands. Le calcul ne dépend pas des labels ou d'un texte en langage naturel.
 
 Les faits de `implications` ont le même contrat `DetectedFact` qu'une détection : une `expression` structurée (`node`, `kind`, `unit` éventuelle, `label`, `aliases`, `id`), une `relation` et une `signature`. Ils restent inspectables même lorsque leur détection est supprimée de la liste principale. L'`id` est une clé canonique calculée à partir de l'AST, pas une expression à désérialiser. Les références `FactReference` de `explainedBy` utilisent explicitement `expressionId` et `relation` ; elles se résolvent parmi les détections et leurs implications pour le même groupe de sujets.
+
+`resolveFact(reference, detections)` résout ces références sans parser les identifiants. `debugDetection(detection, detections)` affiche les implications et les explications avec leurs labels, relations et paramètres, sans exposer les clés techniques. Fournir toutes les détections du même groupe permet aussi de résoudre les faits supprimés de la liste principale. Sans le contexte nécessaire, une référence est affichée comme `unresolved expression`, pas comme une expression JSON à désérialiser. L'export JSON conserve les expressions structurées et les identifiants nécessaires aux références.
 
 ### Un vocabulaire volontairement borné
 

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { debugDetection as packagedDebugDetection } from 'coinciden-tally'
 import {
   CoincidenceEngine,
   Observations,
@@ -7,10 +8,12 @@ import {
   combinations,
   combinationCount,
   datePart,
+  debugDetection,
   field,
   interval,
   known,
   missing,
+  resolveFact,
 } from '../src/index.js'
 import type { Detection, Domain, Observation, Schema } from '../src/index.js'
 
@@ -68,6 +71,10 @@ test('pairs: equality and gap, never a two-point regularity; independent of orde
   const distinct = required(gap.implications.find(item => item.relation === 'allDistinct'))
   assert.deepEqual(distinct.expression, gap.expression)
   assert.deepEqual(distinct.signature, { parameters: {}, class: {} })
+  const display = debugDetection(gap)
+  assert.ok(display.includes('implies:\n  - x / allDistinct'))
+  assert.ok(!display.includes(gap.expression.id))
+  assert.equal(packagedDebugDetection(gap), display)
 })
 
 test('N>2: positive sorted regularity and a discovered cross-field interval', () => {
@@ -240,6 +247,9 @@ test('date parts, intervals, leap dates, implication pruning and provenance', ()
       assert.ok(
         facts.some(fact => fact.expression.id === reference.expressionId && fact.relation === reference.relation)
       )
+      const resolved = resolveFact(reference, exported)
+      assert.equal(resolved?.expression.id, reference.expressionId)
+      assert.equal(resolved.relation, reference.relation)
     }
   }
   const yearInterval = required(exported.find(item => item.expression.label === 'interval(year(start), year(end))'))
@@ -253,6 +263,19 @@ test('date parts, intervals, leap dates, implication pruning and provenance', ()
       )
     )
   )
+  const display = debugDetection(yearInterval, exported)
+  assert.ok(
+    display.includes(
+      'explained by conjunction: year(start) / allEqual / {"value":2000} AND year(end) / allEqual / {"value":2000}'
+    )
+  )
+  for (const fact of facts) assert.ok(!display.includes(fact.expression.id))
+  const standalone = debugDetection(yearInterval)
+  assert.ok(standalone.includes('unresolved expression / allEqual'))
+  assert.equal(resolveFact({ expressionId: startEquality.expression.id, relation: 'pairGap' }, exported), undefined)
+  const impliedDisplay = debugDetection(startEquality)
+  assert.ok(impliedDisplay.includes('year(start) / allEqual / {"value":2000}'))
+  assert.ok(impliedDisplay.includes('month(start) / allEqual / {"value":"02"}'))
   assert.equal(detections.find(item => item.expression.label === 'interval(start, end)')?.signature.parameters.value, 1)
   assert.deepEqual(
     detections.find(item => item.expression.label === 'interval(start, end)')?.observations[0]?.sources,

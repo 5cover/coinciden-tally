@@ -38,6 +38,16 @@ export interface Detection extends DetectedFact {
   prevalence?: Prevalence
 }
 
+/** Resolve a reference within a single subject group's detections, including suppressed facts. */
+export function resolveFact(reference: FactReference, detections: readonly Detection[]): DetectedFact | undefined {
+  for (const detection of detections) {
+    for (const fact of [detection, ...detection.implications]) {
+      if (fact.expression.id === reference.expressionId && fact.relation === reference.relation) return fact
+    }
+  }
+  return undefined
+}
+
 /** Only explicit, sound implications are suppressed; no statistical independence claim. */
 export function mergeImplications(
   detections: readonly Detection[],
