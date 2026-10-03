@@ -12,7 +12,7 @@ import {
   known,
   missing,
 } from '../src/index.js'
-import type { Domain, Observation, Schema } from '../src/index.js'
+import type { Detection, Domain, Observation, Schema } from '../src/index.js'
 
 interface Item {
   id: string
@@ -64,6 +64,10 @@ test('pairs: equality and gap, never a two-point regularity; independent of orde
   assert.ok(
     detections.find(item => item.relation === 'pairGap')?.implications.some(item => item.relation === 'allDistinct')
   )
+  const gap = required(detections.find(item => item.expression.label === 'x' && item.relation === 'pairGap'))
+  const distinct = required(gap.implications.find(item => item.relation === 'allDistinct'))
+  assert.deepEqual(distinct.expression, gap.expression)
+  assert.deepEqual(distinct.signature, { parameters: {}, class: {} })
 })
 
 test('N>2: positive sorted regularity and a discovered cross-field interval', () => {
@@ -218,7 +222,37 @@ test('date parts, intervals, leap dates, implication pruning and provenance', ()
   })
   const detections = engine.detect(['a', 'b'])
   assert.ok(!detections.some(item => item.expression.node.op === 'datePart'))
-  assert.equal(detections.find(item => item.expression.label === 'start')?.implications.length, 3)
+  const startEquality = required(detections.find(item => item.expression.label === 'start'))
+  assert.equal(startEquality.implications.length, 3)
+  for (const part of ['year', 'month', 'monthDay'] as const) {
+    const implied = required(startEquality.implications.find(item => item.expression.label === `${part}(start)`))
+    assert.deepEqual(implied.expression.node, { op: 'datePart', input: start.node, part })
+    assert.equal(implied.expression.kind, part === 'year' ? 'number' : 'category')
+    assert.equal(implied.expression.unit, part === 'year' ? 'year' : undefined)
+    assert.deepEqual(implied.expression.aliases, [`${part}(start)`])
+    assert.equal(implied.relation, 'allEqual')
+    assert.equal(implied.signature.parameters.value, part === 'year' ? 2000 : part === 'month' ? '02' : '02-29')
+  }
+  const exported = JSON.parse(JSON.stringify(detections)) as Detection[]
+  const facts = exported.flatMap(item => [item, ...item.implications])
+  for (const detection of exported) {
+    for (const reference of detection.explainedBy ?? []) {
+      assert.ok(
+        facts.some(fact => fact.expression.id === reference.expressionId && fact.relation === reference.relation)
+      )
+    }
+  }
+  const yearInterval = required(exported.find(item => item.expression.label === 'interval(year(start), year(end))'))
+  assert.equal(yearInterval.explainedBy?.length, 2)
+  assert.ok(
+    yearInterval.explainedBy.every(reference =>
+      exported.some(item =>
+        item.implications.some(
+          fact => fact.expression.id === reference.expressionId && fact.relation === reference.relation
+        )
+      )
+    )
+  )
   assert.equal(detections.find(item => item.expression.label === 'interval(start, end)')?.signature.parameters.value, 1)
   assert.deepEqual(
     detections.find(item => item.expression.label === 'interval(start, end)')?.observations[0]?.sources,
@@ -337,7 +371,27 @@ test('equal endpoints jointly explain equal intervals; each endpoint alone is in
     .detect(['a', 'b', 'c'])
     .find(item => item.expression.label === 'interval(x, y)')
   assert.deepEqual(detection?.explainedBy, [
-    { expression: canonicalKey(x.node), relation: 'allEqual' },
-    { expression: canonicalKey(y.node), relation: 'allEqual' },
+    { expressionId: canonicalKey(x.node), relation: 'allEqual' },
+    { expressionId: canonicalKey(y.node), relation: 'allEqual' },
   ])
+})
+
+test('transitive implications retain structured facts after intermediate detections are suppressed', () => {
+  const signature = { parameters: { value: 42 }, class: {} }
+  const detectors = ['weakest', 'middle', 'strongest'].map((id, index, ids) => ({
+    id,
+    accepts: () => true,
+    detect: () => signature,
+    implies: ids.slice(Math.max(0, index - 1), index),
+  }))
+  const engine = new CoincidenceEngine(domain(items, { fields: [x] }), detectors)
+  const detections = engine.detect(['a', 'b'])
+  assert.equal(detections.length, 1)
+  const strongest = required(detections[0])
+  assert.equal(strongest.relation, 'strongest')
+  assert.deepEqual(strongest.implications.map(fact => fact.relation).sort(), ['middle', 'weakest'])
+  for (const fact of strongest.implications) {
+    assert.deepEqual(fact.expression, strongest.expression)
+    assert.deepEqual(fact.signature, signature)
+  }
 })

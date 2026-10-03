@@ -22,7 +22,7 @@ const results = groups.map(group => ({
 }))
 if (args.includes('--save')) {
   await writeFile(
-    new URL('../../data/exploration-summary.json', import.meta.url),
+    new URL('../data/exploration-summary.json', import.meta.url),
     `${JSON.stringify(
       {
         datasetRetrievedAt: presidentDataset.retrievedAt,

@@ -100,6 +100,8 @@ Une `Observation` est soit `{ status: 'known', value, sources }`, soit `{ status
 
 Une `Detection` contient les sujets, l'expression canonique et ses alias, la relation, la signature, les observations évaluées dans l'ordre des sujets, les implications manifestes et éventuellement la prévalence. Les observations dérivées conservent les sources des operands. Le calcul ne dépend pas des labels ou d'un texte en langage naturel.
 
+Les faits de `implications` ont le même contrat `DetectedFact` qu'une détection : une `expression` structurée (`node`, `kind`, `unit` éventuelle, `label`, `aliases`, `id`), une `relation` et une `signature`. Ils restent inspectables même lorsque leur détection est supprimée de la liste principale. L'`id` est une clé canonique calculée à partir de l'AST, pas une expression à désérialiser. Les références `FactReference` de `explainedBy` utilisent explicitement `expressionId` et `relation` ; elles se résolvent parmi les détections et leurs implications pour le même groupe de sujets.
+
 ### Un vocabulaire volontairement borné
 
 Les champs portent un type (`number`, `category`, `boolean`, `date`). Les champs numériques exigent une unité sémantique. Les dates sont des jours grégoriens ISO `YYYY-MM-DD`, pas des timestamps ou des chaînes comparées arbitrairement.

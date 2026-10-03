@@ -16,19 +16,25 @@ export interface Prevalence {
   exactFrequency: number | null
 }
 
-export interface Detection {
-  subjects: readonly { id: string; label: string }[]
+/** A fact keeps its expression inspectable even when its detection is suppressed. */
+export interface DetectedFact {
   expression: CompiledExpression
   relation: string
   signature: Signature
+}
+
+/** Resolved against detections and their implications within the same subject group. */
+export interface FactReference {
+  expressionId: string
+  relation: string
+}
+
+export interface Detection extends DetectedFact {
+  subjects: readonly { id: string; label: string }[]
   observations: readonly Observation[]
-  implications: readonly {
-    expression: string
-    relation: string
-    signature: Signature
-  }[]
+  implications: readonly DetectedFact[]
   /** A conjunction of equalities that logically entails this interval equality. */
-  explainedBy?: readonly { expression: string; relation: string }[]
+  explainedBy?: readonly FactReference[]
   prevalence?: Prevalence
 }
 
@@ -50,7 +56,7 @@ export function mergeImplications(
     )
     if (parents.every(parent => parent !== undefined)) {
       detection.explainedBy = parents.map(parent => ({
-        expression: parent.expression.id,
+        expressionId: parent.expression.id,
         relation: parent.relation,
       }))
     }
@@ -73,7 +79,7 @@ export function mergeImplications(
       if (equalityProjection || (sameExpression && implies.get(stronger.relation)?.includes(weaker.relation))) {
         suppressed.add(weaker)
         stronger.implications.push({
-          expression: weaker.expression.id,
+          expression: weaker.expression,
           relation: weaker.relation,
           signature: weaker.signature,
         })
@@ -85,9 +91,10 @@ export function mergeImplications(
   return result
     .filter(item => !suppressed.has(item))
     .map(item => {
-      const facts = new Map(item.implications.map(fact => [`${fact.expression}:${fact.relation}`, fact]))
+      const facts = new Map(item.implications.map(fact => [`${fact.expression.id}:${fact.relation}`, fact]))
       for (const [key] of facts) {
-        for (const fact of byFact.get(key)?.implications ?? []) facts.set(`${fact.expression}:${fact.relation}`, fact)
+        for (const fact of byFact.get(key)?.implications ?? [])
+          facts.set(`${fact.expression.id}:${fact.relation}`, fact)
       }
       return { ...item, implications: [...facts.values()] }
     })
