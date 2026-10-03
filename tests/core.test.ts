@@ -297,6 +297,67 @@ test('date parts, intervals, leap dates, implication pruning and provenance', ()
   assert.ok(monthDay?.implications.some(item => item.relation === 'allEqual'))
 })
 
+test('distinct calendar projections imply distinct inputs, including transitive year relations', () => {
+  const date = field<{ id: string; date: string }, 'date'>('date', 'date', item => known(item.date))
+  const detectDates = (dates: string[]): Detection[] => {
+    const instances = dates.map((value, index) => ({ id: String(index), date: value }))
+    return new CoincidenceEngine({
+      id: 'calendar-projections',
+      instances,
+      schema: { fields: [date] },
+      identify: item => item.id,
+      label: item => item.id,
+    }).detect(instances.map(item => item.id))
+  }
+  const differentMonths = detectDates(['2000-01-01', '2000-02-02', '2000-03-03'])
+  const month = required(differentMonths.find(item => item.expression.label === 'month(date)'))
+  assert.equal(month.relation, 'allDistinct')
+  for (const label of ['monthDay(date)', 'date']) {
+    assert.ok(!differentMonths.some(item => item.expression.label === label))
+    assert.ok(month.implications.some(fact => fact.expression.label === label && fact.relation === 'allDistinct'))
+  }
+
+  const differentDays = detectDates(['2000-01-01', '2000-01-02', '2000-01-03'])
+  const monthDay = required(differentDays.find(item => item.expression.label === 'monthDay(date)'))
+  assert.ok(monthDay.implications.some(fact => fact.expression.label === 'date' && fact.relation === 'allDistinct'))
+  assert.equal(differentDays.find(item => item.expression.label === 'month(date)')?.relation, 'allEqual')
+
+  for (const dates of [
+    ['2000-01-01', '2005-01-01'],
+    ['2000-01-01', '2005-01-01', '2010-01-01'],
+  ]) {
+    const detections = detectDates(dates)
+    const year = required(detections.find(item => item.expression.label === 'year(date)'))
+    assert.equal(year.relation, dates.length === 2 ? 'pairGap' : 'regularSpacing')
+    assert.ok(!detections.some(item => item.expression.label === 'date'))
+    for (const label of ['year(date)', 'date']) {
+      assert.ok(year.implications.some(fact => fact.expression.label === label && fact.relation === 'allDistinct'))
+    }
+  }
+})
+
+test('distinct dates do not imply distinct projections, and calendar implications do not cross fields', () => {
+  const start = field<{ id: string; start: string; end: string }, 'date'>('start', 'date', item => known(item.start))
+  const end = field<{ id: string; start: string; end: string }, 'date'>('end', 'date', item => known(item.end))
+  const detections = new CoincidenceEngine({
+    id: 'independent-dates',
+    instances: [
+      { id: 'a', start: '2000-01-01', end: '2000-01-01' },
+      { id: 'b', start: '2000-02-02', end: '2000-01-02' },
+      { id: 'c', start: '2000-03-03', end: '2001-01-01' },
+    ],
+    schema: { fields: [start, end] },
+    identify: item => item.id,
+    label: item => item.id,
+  }).detect(['a', 'b', 'c'])
+  const distinctEnd = required(detections.find(item => item.expression.label === 'end'))
+  assert.equal(distinctEnd.relation, 'allDistinct')
+  assert.deepEqual(distinctEnd.implications, [])
+  assert.ok(!detections.some(item => ['year(end)', 'monthDay(end)'].includes(item.expression.label)))
+  const startMonths = required(detections.find(item => item.expression.label === 'month(start)'))
+  assert.ok(startMonths.implications.every(fact => fact.expression.label !== 'end'))
+})
+
 test('reject incompatible units, undeclared fields, forged types, cycles and invalid numeric values', () => {
   const weight = field<Item, 'number'>('weight', 'number', () => known(1), {
     unit: 'kg',

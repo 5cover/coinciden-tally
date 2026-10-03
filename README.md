@@ -19,6 +19,8 @@ pnpm explore adams monroe grant hoover carter --max-groups=1300000
 
 Le mode texte affiche les huit premières détections, triées par prévalence structurelle croissante. `--json` expose **toutes** les détections, leurs AST, observations, sources, implications et compteurs. `--save` régénère [`data/exploration-summary.json`](data/exploration-summary.json) avec les huit premiers résultats de chaque groupe exécuté. Sans identifiants, quatre groupes arbitraires fixes sont comparés. Les identifiants utilisables sont dans [`data/presidents.json`](data/presidents.json), ou `presidentsDomain.instances`.
 
+`--save=chemin` choisit le fichier de sortie, relatif au répertoire courant. `pnpm explore:save` régénère les deux résumés versionnés, y compris celui du groupe de cinq présidents. Les deux fichiers partagent le même format : métadonnées du dataset, groupes, nombre de détections et huit premiers faits avec leurs prévalences et implications.
+
 ## Exemple d'API générique
 
 Après `pnpm build`, les exports ESM `coinciden-tally` et `coinciden-tally/presidents` sont utilisables, y compris depuis ce dépôt. Les types sont générés avec le build.
@@ -171,6 +173,7 @@ Le garde-fou par défaut est **100 000 combinaisons, cible comprise**. Un dépas
 - Un champ matérialisé peut déclarer `definedAs: interval(birth, event)`. Ses détections sont fusionnées avec celles de l'expression. Le moteur vérifie l'égalité de la valeur stockée et calculée lorsqu'elles sont toutes deux disponibles. L'expression est la référence : une valeur stockée ne remplace pas des operands manquants.
 - `regularSpacing` et `pairGap` impliquent `allDistinct` sur la même expression : le fait faible est conservé dans `implications`, pas présenté séparément.
 - L'égalité d'une date complète implique celle de son année, de son mois et de son jour-mois. L'égalité du jour-mois implique celle du mois. Les faits faibles sont fusionnés, avec conservation des implications transitives.
+- Des années, mois ou jours-mois tous distincts impliquent des dates complètes toutes distinctes. Des mois tous distincts impliquent aussi des jours-mois tous distincts. Les implications transitives de `pairGap` et `regularSpacing` sur les années conservent également la distinction des dates complètes. La réciproque n'est pas supposée : des dates distinctes peuvent partager une année ou un mois.
 - Quand les deux endpoints sont constants dans un groupe, l'égalité de leur intervalle est marquée `explainedBy` avec **les deux** faits nécessaires. Cette dépendance conjointe reste visible, sans prétendre qu'un seul endpoint implique le résultat. Les références peuvent viser un fait présent dans `implications`.
 - Les définitions d'alias et les implications de détecteurs cycliques sont refusées. Les types et unités sont vérifiés après normalisation.
 

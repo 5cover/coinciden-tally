@@ -1,30 +1,409 @@
 {
   "datasetRetrievedAt": "2026-10-03T08:15:03.868Z",
-  "command": "pnpm explore adams monroe grant hoover carter --max-groups=1300000",
-  "ids": ["adams", "monroe", "grant", "hoover", "carter"],
-  "detectionCount": 16,
-  "totalOtherGroups": 1221758,
-  "selectedResults": [
+  "reference": "us-presidents",
+  "results": [
     {
-      "expression": "religionSummary",
-      "relation": "allDistinct",
-      "signature": { "parameters": {}, "class": {} },
-      "matches": 373820,
-      "eligibleOtherGroups": 1221758
-    },
-    {
-      "expression": "interval(year(birthDate), year(firstStart))",
-      "relation": "allDistinct",
-      "signature": { "parameters": {}, "class": {} },
-      "matches": 859691,
-      "eligibleOtherGroups": 1221758
-    },
-    {
-      "expression": "presidencyPeriods",
-      "relation": "allEqual",
-      "signature": { "parameters": { "value": 1 }, "class": {} },
-      "matches": 962597,
-      "eligibleOtherGroups": 1221758
+      "ids": [
+        "adams",
+        "monroe",
+        "grant",
+        "hoover",
+        "carter"
+      ],
+      "detectionCount": 12,
+      "top": [
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "religionSummary"
+            },
+            "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
+            "kind": "category",
+            "label": "religionSummary",
+            "aliases": [
+              "religionSummary"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1221758,
+            "missingOtherGroups": 0,
+            "matches": 373820,
+            "frequency": 0.3059689398391498,
+            "exactMatches": 373820,
+            "exactFrequency": 0.3059689398391498
+          },
+          "implications": []
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "part": "year"
+              },
+              "to": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "firstStart"
+                },
+                "part": "year"
+              }
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "interval(year(birthDate), year(firstStart))",
+            "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+            "aliases": [
+              "interval(year(birthDate), year(firstStart))"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1221758,
+            "missingOtherGroups": 0,
+            "matches": 859691,
+            "frequency": 0.7036508048238685,
+            "exactMatches": 859691,
+            "exactFrequency": 0.7036508048238685
+          },
+          "implications": []
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "presidencyPeriods"
+            },
+            "id": "{\"field\":\"presidencyPeriods\",\"op\":\"field\"}",
+            "kind": "number",
+            "label": "presidencyPeriods",
+            "unit": "count",
+            "aliases": [
+              "presidencyPeriods"
+            ]
+          },
+          "relation": "allEqual",
+          "signature": {
+            "parameters": {
+              "value": 1
+            },
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1221758,
+            "missingOtherGroups": 0,
+            "matches": 962597,
+            "frequency": 0.787878614259125,
+            "exactMatches": 962597,
+            "exactFrequency": 0.787878614259125
+          },
+          "implications": []
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "interval",
+              "from": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "part": "year"
+              },
+              "to": {
+                "op": "datePart",
+                "input": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "part": "year"
+              }
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "interval(year(birthDate), year(deathDate))",
+            "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
+            "aliases": [
+              "interval(year(birthDate), year(deathDate))"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 658007,
+            "missingOtherGroups": 563751,
+            "matches": 560357,
+            "frequency": 0.8515973234327294,
+            "exactMatches": 560357,
+            "exactFrequency": 0.8515973234327294
+          },
+          "implications": []
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "birthDate"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(birthDate)",
+            "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(birthDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1221758,
+            "missingOtherGroups": 0,
+            "matches": 1137823,
+            "frequency": 0.9312998155117462,
+            "exactMatches": 1137823,
+            "exactFrequency": 0.9312998155117462
+          },
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "birthDate",
+                "aliases": [
+                  "birthDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "deathDate"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(deathDate)",
+            "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(deathDate)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 658007,
+            "missingOtherGroups": 563751,
+            "matches": 632807,
+            "frequency": 0.9617025350794141,
+            "exactMatches": 632807,
+            "exactFrequency": 0.9617025350794141
+          },
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "deathDate",
+                "aliases": [
+                  "deathDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "lastEnd"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(lastEnd)",
+            "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(lastEnd)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1086007,
+            "missingOtherGroups": 135751,
+            "matches": 1063087,
+            "frequency": 0.9788951636591661,
+            "exactMatches": 1063087,
+            "exactFrequency": 0.9788951636591661
+          },
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "lastEnd"
+                },
+                "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "lastEnd",
+                "aliases": [
+                  "lastEnd"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "datePart",
+              "input": {
+                "op": "field",
+                "field": "firstStart"
+              },
+              "part": "year"
+            },
+            "kind": "number",
+            "unit": "year",
+            "label": "year(firstStart)",
+            "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}",
+            "aliases": [
+              "year(firstStart)"
+            ]
+          },
+          "relation": "allDistinct",
+          "signature": {
+            "parameters": {},
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 1221758,
+            "eligibleOtherGroups": 1221758,
+            "missingOtherGroups": 0,
+            "matches": 1197117,
+            "frequency": 0.979831521463334,
+            "exactMatches": 1197117,
+            "exactFrequency": 0.979831521463334
+          },
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "firstStart"
+                },
+                "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "firstStart",
+                "aliases": [
+                  "firstStart"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

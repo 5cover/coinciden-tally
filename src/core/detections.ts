@@ -48,6 +48,19 @@ export function resolveFact(reference: FactReference, detections: readonly Detec
   return undefined
 }
 
+function isCalendarProjectionOf(projection: CompiledExpression, source: CompiledExpression): boolean {
+  const node = projection.node
+  const sourceNode = source.node
+  return (
+    node.op === 'datePart' &&
+    (canonicalKey(node.input) === source.id ||
+      (node.part === 'month' &&
+        sourceNode.op === 'datePart' &&
+        sourceNode.part === 'monthDay' &&
+        canonicalKey(node.input) === canonicalKey(sourceNode.input)))
+  )
+}
+
 /** Only explicit, sound implications are suppressed; no statistical independence claim. */
 export function mergeImplications(
   detections: readonly Detection[],
@@ -75,18 +88,20 @@ export function mergeImplications(
     for (const weaker of result) {
       if (stronger === weaker) continue
       const sameExpression = stronger.expression.id === weaker.expression.id
-      const node = weaker.expression.node
-      const strongerNode = stronger.expression.node
       const equalityProjection =
         stronger.relation === 'allEqual' &&
         weaker.relation === 'allEqual' &&
-        node.op === 'datePart' &&
-        (canonicalKey(node.input) === stronger.expression.id ||
-          (node.part === 'month' &&
-            strongerNode.op === 'datePart' &&
-            strongerNode.part === 'monthDay' &&
-            canonicalKey(node.input) === canonicalKey(strongerNode.input)))
-      if (equalityProjection || (sameExpression && implies.get(stronger.relation)?.includes(weaker.relation))) {
+        isCalendarProjectionOf(weaker.expression, stronger.expression)
+      // Distinct projected values entail distinct inputs, not the other way around.
+      const distinctProjection =
+        stronger.relation === 'allDistinct' &&
+        weaker.relation === 'allDistinct' &&
+        isCalendarProjectionOf(stronger.expression, weaker.expression)
+      if (
+        equalityProjection ||
+        distinctProjection ||
+        (sameExpression && implies.get(stronger.relation)?.includes(weaker.relation))
+      ) {
         suppressed.add(weaker)
         stronger.implications.push({
           expression: weaker.expression,

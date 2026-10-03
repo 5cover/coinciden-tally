@@ -4,6 +4,9 @@ import { writeFile } from 'node:fs/promises'
 
 const args = process.argv.slice(2)
 const json = args.includes('--json')
+const saveOption = args.find(arg => arg.startsWith('--save='))
+const savePath = saveOption?.slice('--save='.length)
+if (savePath === '') throw new Error('--save requires an output path')
 const ids = args.filter(arg => !arg.startsWith('--'))
 const limitOption = args.find(arg => arg.startsWith('--max-groups='))
 const maxGroups = limitOption ? Number(limitOption.slice('--max-groups='.length)) : 100_000
@@ -20,9 +23,9 @@ const results = groups.map(group => ({
   ids: group,
   detections: engine.analyze(group, { maxGroups }),
 }))
-if (args.includes('--save')) {
+if (args.includes('--save') || savePath) {
   await writeFile(
-    new URL('../data/exploration-summary.json', import.meta.url),
+    savePath ?? new URL('../data/exploration-summary.json', import.meta.url),
     `${JSON.stringify(
       {
         datasetRetrievedAt: presidentDataset.retrievedAt,

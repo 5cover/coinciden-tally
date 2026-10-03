@@ -85,6 +85,17 @@ test('five arbitrary presidents: detection remains N-ary; exhaustive guard is ex
   assert.throws(() => engine.analyze(ids), /requires 1221759/)
 })
 
+test('presidential calendar distinctions retain their consequences instead of separate detections', () => {
+  const detections = new CoincidenceEngine(presidentsDomain).detect(['grant', 'coolidge', 'eisenhower'])
+  const month = detections.find(item => item.expression.label === 'month(firstStart)')
+  assert.ok(month)
+  assert.equal(month.relation, 'allDistinct')
+  for (const label of ['monthDay(firstStart)', 'firstStart']) {
+    assert.ok(!detections.some(item => item.expression.label === label))
+    assert.ok(month.implications.some(fact => fact.expression.label === label && fact.relation === 'allDistinct'))
+  }
+})
+
 test('import parses only homogeneous facts and preserves absent ends, not an index fallback', () => {
   const html = `<h1>Example</h1>
     <div class="data"><label>Birth Date</label><div><time datetime="1900-03-01T12:00:00Z">March 1, 1900</time></div></div>

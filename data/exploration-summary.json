@@ -7,7 +7,7 @@
         "monroe",
         "taft"
       ],
-      "detectionCount": 24,
+      "detectionCount": 18,
       "top": [
         {
           "expression": {
@@ -441,7 +441,50 @@
             "exactMatches": 709,
             "exactFrequency": 0.9101412066752247
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "deathDate",
+                "aliases": [
+                  "deathDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "deathDate"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(deathDate)",
+                "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(deathDate)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -450,7 +493,7 @@
         "vanburen",
         "hoover"
       ],
-      "detectionCount": 24,
+      "detectionCount": 18,
       "top": [
         {
           "expression": {
@@ -820,7 +863,50 @@
             "exactMatches": 709,
             "exactFrequency": 0.9101412066752247
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "deathDate",
+                "aliases": [
+                  "deathDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "deathDate"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(deathDate)",
+                "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(deathDate)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -830,7 +916,7 @@
         "polk",
         "carter"
       ],
-      "detectionCount": 21,
+      "detectionCount": 16,
       "top": [
         {
           "expression": {
@@ -866,7 +952,27 @@
             "exactMatches": 4599,
             "exactFrequency": 0.3472778071433965
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "lastEnd"
+                },
+                "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "lastEnd",
+                "aliases": [
+                  "lastEnd"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         },
         {
           "expression": {
@@ -1006,7 +1112,50 @@
             "exactMatches": 11106,
             "exactFrequency": 0.7827190076820072
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "birthDate",
+                "aliases": [
+                  "birthDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "birthDate"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(birthDate)",
+                "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(birthDate)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         },
         {
           "expression": {
@@ -1147,7 +1296,7 @@
         "coolidge",
         "eisenhower"
       ],
-      "detectionCount": 24,
+      "detectionCount": 17,
       "top": [
         {
           "expression": {
@@ -1217,7 +1366,50 @@
             "exactMatches": 3998,
             "exactFrequency": 0.2817675664246952
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "firstStart"
+                },
+                "id": "{\"field\":\"firstStart\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "firstStart",
+                "aliases": [
+                  "firstStart"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "firstStart"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(firstStart)",
+                "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(firstStart)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         },
         {
           "expression": {
@@ -1253,43 +1445,27 @@
             "exactMatches": 4599,
             "exactFrequency": 0.3472778071433965
           },
-          "implications": []
-        },
-        {
-          "expression": {
-            "node": {
-              "op": "datePart",
-              "input": {
-                "op": "field",
-                "field": "firstStart"
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "lastEnd"
+                },
+                "id": "{\"field\":\"lastEnd\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "lastEnd",
+                "aliases": [
+                  "lastEnd"
+                ]
               },
-              "part": "monthDay"
-            },
-            "kind": "category",
-            "label": "monthDay(firstStart)",
-            "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(firstStart)"
-            ]
-          },
-          "relation": "allDistinct",
-          "signature": {
-            "parameters": {},
-            "class": {}
-          },
-          "prevalence": {
-            "method": "exhaustive",
-            "reference": "other-groups-of-same-size",
-            "matching": "structural-class",
-            "totalOtherGroups": 14189,
-            "eligibleOtherGroups": 14189,
-            "missingOtherGroups": 0,
-            "matches": 5258,
-            "frequency": 0.37056875044048204,
-            "exactMatches": 5258,
-            "exactFrequency": 0.37056875044048204
-          },
-          "implications": []
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         },
         {
           "expression": {
@@ -1357,7 +1533,50 @@
             "exactMatches": 7375,
             "exactFrequency": 0.7465330499038364
           },
-          "implications": []
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "deathDate"
+                },
+                "id": "{\"field\":\"deathDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "deathDate",
+                "aliases": [
+                  "deathDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "deathDate"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(deathDate)",
+                "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(deathDate)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
         },
         {
           "expression": {
@@ -1432,6 +1651,84 @@
             "frequency": 0.7827190076820072,
             "exactMatches": 11106,
             "exactFrequency": 0.7827190076820072
+          },
+          "implications": [
+            {
+              "expression": {
+                "node": {
+                  "op": "field",
+                  "field": "birthDate"
+                },
+                "id": "{\"field\":\"birthDate\",\"op\":\"field\"}",
+                "kind": "date",
+                "label": "birthDate",
+                "aliases": [
+                  "birthDate"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            },
+            {
+              "expression": {
+                "node": {
+                  "op": "datePart",
+                  "input": {
+                    "op": "field",
+                    "field": "birthDate"
+                  },
+                  "part": "monthDay"
+                },
+                "kind": "category",
+                "label": "monthDay(birthDate)",
+                "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
+                "aliases": [
+                  "monthDay(birthDate)"
+                ]
+              },
+              "relation": "allDistinct",
+              "signature": {
+                "parameters": {},
+                "class": {}
+              }
+            }
+          ]
+        },
+        {
+          "expression": {
+            "node": {
+              "op": "field",
+              "field": "presidencyPeriods"
+            },
+            "id": "{\"field\":\"presidencyPeriods\",\"op\":\"field\"}",
+            "kind": "number",
+            "label": "presidencyPeriods",
+            "unit": "count",
+            "aliases": [
+              "presidencyPeriods"
+            ]
+          },
+          "relation": "allEqual",
+          "signature": {
+            "parameters": {
+              "value": 1
+            },
+            "class": {}
+          },
+          "prevalence": {
+            "method": "exhaustive",
+            "reference": "other-groups-of-same-size",
+            "matching": "structural-class",
+            "totalOtherGroups": 14189,
+            "eligibleOtherGroups": 14189,
+            "missingOtherGroups": 0,
+            "matches": 12340,
+            "frequency": 0.8696877863133413,
+            "exactMatches": 12340,
+            "exactFrequency": 0.8696877863133413
           },
           "implications": []
         }
