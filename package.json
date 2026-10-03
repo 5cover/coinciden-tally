@@ -2,8 +2,16 @@
   "name": "coinciden-tally",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "pnpm build && node --test dist/tests/*.test.js",
+    "lint": "eslint src tests eslint.config.ts"
   },
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "types": "./dist/src/index.d.ts",
+  "files": ["dist/src", "README.md"],
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -11,8 +19,10 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.4",
+    "cheerio": "^1.2.0",
     "eslint": "^10.11.0",
     "jiti": "^2.7.0",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.0"
   }
 }

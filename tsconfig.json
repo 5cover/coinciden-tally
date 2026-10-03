@@ -5,6 +5,7 @@
     "isolatedModules": true,
     "module": "NodeNext",
     "moduleDetection": "force",
+    "target": "ES2022",
     "noEmit": true,
     "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
@@ -18,10 +19,9 @@
     "verbatimModuleSyntax": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules", "dist", "docs"
   ],
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts", "eslint.config.ts"
   ]
 }
