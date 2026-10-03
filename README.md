@@ -23,6 +23,8 @@ Le mode texte affiche les huit premières détections, triées par prévalence s
 
 Après `pnpm build`, les exports ESM `coinciden-tally` et `coinciden-tally/presidents` sont utilisables, y compris depuis ce dépôt. Les types sont générés avec le build.
 
+L'exemple complet est dans [`scripts/example.ts`](scripts/example.ts), exécutable avec `pnpm example`. Ses huit personnes et ses années sont fictives : la population illustre des structures répétées, des paramètres exacts différents et une donnée manquante, pas une estimation statistique représentative.
+
 ```ts
 import { CoincidenceEngine, debugDetection, field, known, missing } from 'coinciden-tally'
 import type { Domain } from 'coinciden-tally'
@@ -49,8 +51,14 @@ const domain: Domain<Person> = {
   instances: [
     { id: 'a', birthYear: 10, eventYear: 58, category: 'A' },
     { id: 'b', birthYear: 15, eventYear: 63, category: 'A' },
-    { id: 'c', birthYear: 20, eventYear: 68, category: 'B' },
-    { id: 'd', birthYear: 31, eventYear: 80, category: 'B' },
+    { id: 'c', birthYear: 20, eventYear: 68, category: 'A' },
+    // D'autres triplets reproduisent les structures, parfois avec un autre pas ou une autre catégorie.
+    { id: 'd', birthYear: 25, eventYear: 73, category: 'B' },
+    { id: 'e', birthYear: 30, eventYear: 78, category: 'B' },
+    { id: 'f', birthYear: 40, eventYear: 88, category: 'B' },
+    // Un intervalle différent et une naissance inconnue rendent les comparaisons moins uniformes.
+    { id: 'g', birthYear: 31, eventYear: 80, category: 'C' },
+    { id: 'h', birthYear: null, eventYear: 98, category: 'A' },
   ],
   schema: {
     fields: [birth, event, field<Person, 'category'>('category', 'category', p => known(p.category))],
@@ -61,13 +69,22 @@ const domain: Domain<Person> = {
 
 const engine = new CoincidenceEngine(domain)
 const detections = engine.analyze(['a', 'b', 'c'])
-for (const detection of detections) console.log(debugDetection(detection))
-
-// Entre autres :
-// birthYear / regularSpacing / { step: 5 }
-// interval(birthYear, eventYear) / allEqual / { value: 48 }
-// Pour ces deux structures : 0 correspondance parmi les 3 autres triplets.
+console.log('Groupe analysé : a, b, c. Comparaison avec les autres triplets, groupe cible exclu.')
+for (const detection of detections) console.log(`\n${debugDetection(detection)}`)
 ```
+
+L'exécution affiche quatre détections, triées par prévalence structurelle croissante :
+
+| Expression                       | Relation         | Prévalence structurelle | Prévalence exacte | Triplets avec donnée manquante |
+| -------------------------------- | ---------------- | ----------------------- | ----------------- | ------------------------------ |
+| `category`                       | `allEqual`       | 7,27 % (4/55)           | 5,45 % (3/55)     | 0                              |
+| `eventYear`                      | `regularSpacing` | 12,73 % (7/55)          | 3,64 % (2/55)     | 0                              |
+| `birthYear`                      | `regularSpacing` | 14,71 % (5/34)          | 5,88 % (2/34)     | 21                             |
+| `interval(birthYear, eventYear)` | `allEqual`       | 55,88 % (19/34)         | 55,88 % (19/34)   | 21                             |
+
+Il y a 56 triplets possibles, dont le groupe cible est exclu : 55 autres groupes. La naissance inconnue de `h` rend 21 triplets inéligibles pour `birthYear` et l'intervalle, mais pas pour `eventYear` ou `category`. Le dénominateur dépend donc de l'expression.
+
+La prévalence structurelle compte les progressions de n'importe quel pas et les catégories égales de n'importe quelle valeur. La prévalence exacte exige le pas observé de 5 ou la catégorie `A`. Ainsi, le triplet `d,e,f`, de catégorie `B`, contribue à l'égalité structurelle des catégories, mais pas à son égalité exacte.
 
 `detect(ids)` détecte sans calculer de prévalence. `analyze(ids, { maxGroups })` ajoute les compteurs exhaustifs et trie avec `byPrevalence`. L'ordre fourni des sujets ne change pas le résultat. Un groupe comporte des identifiants uniques appartenant au domaine ; il peut contenir deux, trois, cinq ou davantage de sujets. Les observations du domaine sont évaluées et indexées une fois à la construction du moteur : reconstruire le moteur après modification des données.
 

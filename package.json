@@ -6,6 +6,7 @@
     "typecheck": "tsc -p tsconfig.json",
     "test": "pnpm build && node --import tsx --test tests/*.test.ts",
     "lint": "eslint src tests scripts eslint.config.ts",
+    "example": "pnpm build && node --import tsx scripts/example.ts",
     "explore": "pnpm build && node --import tsx scripts/explore.ts",
     "import:presidents": "pnpm build && node scripts/import-presidents.ts"
   },
