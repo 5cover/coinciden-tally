@@ -3,10 +3,7 @@
   "reference": "us-presidents",
   "results": [
     {
-      "ids": [
-        "monroe",
-        "taft"
-      ],
+      "ids": ["monroe", "taft"],
       "detectionCount": 24,
       "top": [
         {
@@ -34,9 +31,7 @@
             "unit": "year",
             "label": "interval(year(birthDate), year(deathDate))",
             "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(birthDate), year(deathDate))"
-            ]
+            "aliases": ["interval(year(birthDate), year(deathDate))"]
           },
           "relation": "allEqual",
           "signature": {
@@ -72,9 +67,7 @@
             "kind": "category",
             "label": "monthDay(firstStart)",
             "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(firstStart)"
-            ]
+            "aliases": ["monthDay(firstStart)"]
           },
           "relation": "allEqual",
           "signature": {
@@ -121,9 +114,7 @@
             "kind": "category",
             "label": "monthDay(lastEnd)",
             "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(lastEnd)"
-            ]
+            "aliases": ["monthDay(lastEnd)"]
           },
           "relation": "allEqual",
           "signature": {
@@ -182,9 +173,7 @@
             "unit": "year",
             "label": "interval(year(firstStart), year(lastEnd))",
             "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(firstStart), year(lastEnd))"
-            ]
+            "aliases": ["interval(year(firstStart), year(lastEnd))"]
           },
           "relation": "pairGap",
           "signature": {
@@ -225,9 +214,7 @@
             "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "partySummary",
-            "aliases": [
-              "partySummary"
-            ]
+            "aliases": ["partySummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -257,9 +244,7 @@
             "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "religionSummary",
-            "aliases": [
-              "religionSummary"
-            ]
+            "aliases": ["religionSummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -297,9 +282,7 @@
             "unit": "day",
             "label": "interval(firstStart, lastEnd)",
             "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
-            "aliases": [
-              "interval(firstStart, lastEnd)"
-            ]
+            "aliases": ["interval(firstStart, lastEnd)"]
           },
           "relation": "pairGap",
           "signature": {
@@ -344,9 +327,7 @@
             "kind": "category",
             "label": "month(deathDate)",
             "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(deathDate)"
-            ]
+            "aliases": ["month(deathDate)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -370,10 +351,7 @@
       ]
     },
     {
-      "ids": [
-        "vanburen",
-        "hoover"
-      ],
+      "ids": ["vanburen", "hoover"],
       "detectionCount": 24,
       "top": [
         {
@@ -401,9 +379,7 @@
             "unit": "year",
             "label": "interval(year(birthDate), year(firstStart))",
             "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(birthDate), year(firstStart))"
-            ]
+            "aliases": ["interval(year(birthDate), year(firstStart))"]
           },
           "relation": "allEqual",
           "signature": {
@@ -443,9 +419,7 @@
             "unit": "day",
             "label": "interval(firstStart, lastEnd)",
             "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
-            "aliases": [
-              "interval(firstStart, lastEnd)"
-            ]
+            "aliases": ["interval(firstStart, lastEnd)"]
           },
           "relation": "allEqual",
           "signature": {
@@ -493,9 +467,7 @@
             "unit": "year",
             "label": "interval(year(firstStart), year(lastEnd))",
             "id": "{\"from\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(firstStart), year(lastEnd))"
-            ]
+            "aliases": ["interval(year(firstStart), year(lastEnd))"]
           },
           "relation": "allEqual",
           "signature": {
@@ -531,9 +503,7 @@
             "kind": "category",
             "label": "monthDay(firstStart)",
             "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(firstStart)"
-            ]
+            "aliases": ["monthDay(firstStart)"]
           },
           "relation": "allEqual",
           "signature": {
@@ -580,9 +550,7 @@
             "kind": "category",
             "label": "monthDay(lastEnd)",
             "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(lastEnd)"
-            ]
+            "aliases": ["monthDay(lastEnd)"]
           },
           "relation": "allEqual",
           "signature": {
@@ -625,9 +593,7 @@
             "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "partySummary",
-            "aliases": [
-              "partySummary"
-            ]
+            "aliases": ["partySummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -657,9 +623,7 @@
             "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "religionSummary",
-            "aliases": [
-              "religionSummary"
-            ]
+            "aliases": ["religionSummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -693,9 +657,7 @@
             "kind": "category",
             "label": "month(deathDate)",
             "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(deathDate)"
-            ]
+            "aliases": ["month(deathDate)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -719,11 +681,7 @@
       ]
     },
     {
-      "ids": [
-        "madison",
-        "polk",
-        "carter"
-      ],
+      "ids": ["madison", "polk", "carter"],
       "detectionCount": 21,
       "top": [
         {
@@ -739,9 +697,7 @@
             "kind": "category",
             "label": "monthDay(lastEnd)",
             "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(lastEnd)"
-            ]
+            "aliases": ["monthDay(lastEnd)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -771,9 +727,7 @@
             "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "partySummary",
-            "aliases": [
-              "partySummary"
-            ]
+            "aliases": ["partySummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -803,9 +757,7 @@
             "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "religionSummary",
-            "aliases": [
-              "religionSummary"
-            ]
+            "aliases": ["religionSummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -843,9 +795,7 @@
             "unit": "day",
             "label": "interval(firstStart, lastEnd)",
             "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
-            "aliases": [
-              "interval(firstStart, lastEnd)"
-            ]
+            "aliases": ["interval(firstStart, lastEnd)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -879,9 +829,7 @@
             "kind": "category",
             "label": "month(birthDate)",
             "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(birthDate)"
-            ]
+            "aliases": ["month(birthDate)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -912,9 +860,7 @@
             "kind": "number",
             "label": "presidencyPeriods",
             "unit": "count",
-            "aliases": [
-              "presidencyPeriods"
-            ]
+            "aliases": ["presidencyPeriods"]
           },
           "relation": "allEqual",
           "signature": {
@@ -962,9 +908,7 @@
             "unit": "year",
             "label": "interval(year(birthDate), year(firstStart))",
             "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(birthDate), year(firstStart))"
-            ]
+            "aliases": ["interval(year(birthDate), year(firstStart))"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1010,9 +954,7 @@
             "unit": "year",
             "label": "interval(year(birthDate), year(deathDate))",
             "id": "{\"from\":{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"},\"op\":\"interval\",\"to\":{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"year\"}}",
-            "aliases": [
-              "interval(year(birthDate), year(deathDate))"
-            ]
+            "aliases": ["interval(year(birthDate), year(deathDate))"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1036,11 +978,7 @@
       ]
     },
     {
-      "ids": [
-        "grant",
-        "coolidge",
-        "eisenhower"
-      ],
+      "ids": ["grant", "coolidge", "eisenhower"],
       "detectionCount": 24,
       "top": [
         {
@@ -1052,9 +990,7 @@
             "id": "{\"field\":\"partySummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "partySummary",
-            "aliases": [
-              "partySummary"
-            ]
+            "aliases": ["partySummary"]
           },
           "relation": "allEqual",
           "signature": {
@@ -1090,9 +1026,7 @@
             "kind": "category",
             "label": "month(firstStart)",
             "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(firstStart)"
-            ]
+            "aliases": ["month(firstStart)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1126,9 +1060,7 @@
             "kind": "category",
             "label": "monthDay(lastEnd)",
             "id": "{\"input\":{\"field\":\"lastEnd\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(lastEnd)"
-            ]
+            "aliases": ["monthDay(lastEnd)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1162,9 +1094,7 @@
             "kind": "category",
             "label": "monthDay(firstStart)",
             "id": "{\"input\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"monthDay\"}",
-            "aliases": [
-              "monthDay(firstStart)"
-            ]
+            "aliases": ["monthDay(firstStart)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1194,9 +1124,7 @@
             "id": "{\"field\":\"religionSummary\",\"op\":\"field\"}",
             "kind": "category",
             "label": "religionSummary",
-            "aliases": [
-              "religionSummary"
-            ]
+            "aliases": ["religionSummary"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1230,9 +1158,7 @@
             "kind": "category",
             "label": "month(deathDate)",
             "id": "{\"input\":{\"field\":\"deathDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(deathDate)"
-            ]
+            "aliases": ["month(deathDate)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1270,9 +1196,7 @@
             "unit": "day",
             "label": "interval(firstStart, lastEnd)",
             "id": "{\"from\":{\"field\":\"firstStart\",\"op\":\"field\"},\"op\":\"interval\",\"to\":{\"field\":\"lastEnd\",\"op\":\"field\"}}",
-            "aliases": [
-              "interval(firstStart, lastEnd)"
-            ]
+            "aliases": ["interval(firstStart, lastEnd)"]
           },
           "relation": "allDistinct",
           "signature": {
@@ -1306,9 +1230,7 @@
             "kind": "category",
             "label": "month(birthDate)",
             "id": "{\"input\":{\"field\":\"birthDate\",\"op\":\"field\"},\"op\":\"datePart\",\"part\":\"month\"}",
-            "aliases": [
-              "month(birthDate)"
-            ]
+            "aliases": ["month(birthDate)"]
           },
           "relation": "allDistinct",
           "signature": {

@@ -8,21 +8,21 @@
     {
       "expression": "religionSummary",
       "relation": "allDistinct",
-      "signature": {"parameters": {}, "class": {}},
+      "signature": { "parameters": {}, "class": {} },
       "matches": 373820,
       "eligibleOtherGroups": 1221758
     },
     {
       "expression": "interval(year(birthDate), year(firstStart))",
       "relation": "allDistinct",
-      "signature": {"parameters": {}, "class": {}},
+      "signature": { "parameters": {}, "class": {} },
       "matches": 859691,
       "eligibleOtherGroups": 1221758
     },
     {
       "expression": "presidencyPeriods",
       "relation": "allEqual",
-      "signature": {"parameters": {"value": 1}, "class": {}},
+      "signature": { "parameters": { "value": 1 }, "class": {} },
       "matches": 962597,
       "eligibleOtherGroups": 1221758
     }

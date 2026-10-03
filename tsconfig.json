@@ -13,15 +13,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "verbatimModuleSyntax": true
   },
-  "exclude": [
-    "node_modules", "dist", "docs"
-  ],
-  "include": [
-    "src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts", "eslint.config.ts"
-  ]
+  "exclude": ["node_modules", "dist", "docs"],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts", "eslint.config.ts"]
 }

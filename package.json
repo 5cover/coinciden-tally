@@ -14,7 +14,11 @@
     "./presidents": "./dist/src/domains/presidents/index.js"
   },
   "types": "./dist/src/index.d.ts",
-  "files": ["dist/src", "dist/data", "README.md"],
+  "files": [
+    "dist/src",
+    "dist/data",
+    "README.md"
+  ],
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -25,7 +29,17 @@
     "cheerio": "^1.2.0",
     "eslint": "^10.11.0",
     "jiti": "^2.7.0",
+    "prettier": "^3.9.9",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.71.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "bracketSameLine": true,
+    "trailingComma": "es5",
+    "semi": false
   }
 }
