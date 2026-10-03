@@ -1,0 +1,4246 @@
+{
+  "version": 1,
+  "source": "https://millercenter.org/president",
+  "retrievedAt": "2026-10-03T08:15:03.868Z",
+  "presidents": [
+    {
+      "id": "washington",
+      "name": "George Washington",
+      "birthDate": {
+        "status": "known",
+        "value": "1732-02-22",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/washington",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 22, 1732"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1799-12-14",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/washington",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 14, 1799"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Pope’s Creek, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/washington",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Pope’s Creek, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Federalist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/washington",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Federalist"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/washington",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 1,
+          "start": {
+            "status": "known",
+            "value": "1789-04-30",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/washington",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 30, 1789"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1797-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/washington",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1797"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "adams",
+      "name": "John Adams",
+      "birthDate": {
+        "status": "known",
+        "value": "1735-10-30",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/adams",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 30, 1735"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1826-07-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/adams",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 4, 1826"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "North Precinct of Braintree (now Quincy), Massachusetts",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/adams",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "North Precinct of Braintree (now Quincy), Massachusetts"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Federalist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/adams",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Federalist"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Unitarian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/adams",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Unitarian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 2,
+          "start": {
+            "status": "known",
+            "value": "1797-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/adams",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1797"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1801-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/adams",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1801"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jefferson",
+      "name": "Thomas Jefferson",
+      "birthDate": {
+        "status": "known",
+        "value": "1743-04-13",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jefferson",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 13, 1743"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1826-07-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jefferson",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 4, 1826"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Shadwell plantation, Goochland County, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jefferson",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Shadwell plantation, Goochland County, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democratic-Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jefferson",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democratic-Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "No formal affiliation",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jefferson",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "No formal affiliation"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 3,
+          "start": {
+            "status": "known",
+            "value": "1801-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jefferson",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1801"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1809-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jefferson",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1809"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "madison",
+      "name": "James Madison",
+      "birthDate": {
+        "status": "known",
+        "value": "1751-03-16",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/madison",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 16, 1751"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1836-06-28",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/madison",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 28, 1836"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Port Conway, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/madison",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Port Conway, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democratic-Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/madison",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democratic-Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/madison",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 4,
+          "start": {
+            "status": "known",
+            "value": "1809-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/madison",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1809"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1817-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/madison",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1817"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "monroe",
+      "name": "James Monroe",
+      "birthDate": {
+        "status": "known",
+        "value": "1758-04-28",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/monroe",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 28, 1758"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1831-07-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/monroe",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 4, 1831"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Westmoreland County, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/monroe",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Westmoreland County, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democratic-Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/monroe",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democratic-Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/monroe",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 5,
+          "start": {
+            "status": "known",
+            "value": "1817-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/monroe",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1817"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1825-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/monroe",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1825"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jqadams",
+      "name": "John Quincy Adams",
+      "birthDate": {
+        "status": "known",
+        "value": "1767-07-11",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jqadams",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 11, 1767"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1848-02-23",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jqadams",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 23, 1848"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Braintree (now Quincy), Massachusetts",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jqadams",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Braintree (now Quincy), Massachusetts"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Federalist, Democratic-Republican, Whig",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jqadams",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Federalist, Democratic-Republican, Whig"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Unitarian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jqadams",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Unitarian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 6,
+          "start": {
+            "status": "known",
+            "value": "1825-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jqadams",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1825"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1829-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jqadams",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1829"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jackson",
+      "name": "Andrew Jackson",
+      "birthDate": {
+        "status": "known",
+        "value": "1767-03-15",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jackson",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 15, 1767"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1845-06-08",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jackson",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 8, 1845"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Waxhaw area, on North Carolina-South Carolina border",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jackson",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Waxhaw area, on North Carolina-South Carolina border"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jackson",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/jackson",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 7,
+          "start": {
+            "status": "known",
+            "value": "1829-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jackson",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1829"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1837-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/jackson",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1837"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vanburen",
+      "name": "Martin Van Buren",
+      "birthDate": {
+        "status": "known",
+        "value": "1782-12-05",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/vanburen",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 5, 1782"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1862-07-24",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/vanburen",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 24, 1862"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Kinderhook, New York",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/vanburen",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Kinderhook, New York"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/vanburen",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Dutch Reformed",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/vanburen",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Dutch Reformed"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 8,
+          "start": {
+            "status": "known",
+            "value": "1837-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/vanburen",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1837"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1841-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/vanburen",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1841"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "harrison",
+      "name": "William Harrison",
+      "birthDate": {
+        "status": "known",
+        "value": "1773-02-09",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harrison",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 9, 1773"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1841-04-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harrison",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 4, 1841"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Berkeley plantation, Charles City County, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harrison",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Berkeley plantation, Charles City County, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Whig",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harrison",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Whig"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harrison",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 9,
+          "start": {
+            "status": "known",
+            "value": "1841-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/harrison",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1841"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1841-04-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/harrison",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 4, 1841"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tyler",
+      "name": "John Tyler",
+      "birthDate": {
+        "status": "known",
+        "value": "1790-03-29",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/tyler",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 29, 1790"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1862-01-18",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/tyler",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 18, 1862"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Charles City County, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/tyler",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Charles City County, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat, Whig",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/tyler",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat, Whig"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/tyler",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 10,
+          "start": {
+            "status": "known",
+            "value": "1841-04-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/tyler",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 4, 1841"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1845-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/tyler",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1845"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "polk",
+      "name": "James K. Polk",
+      "birthDate": {
+        "status": "known",
+        "value": "1795-11-02",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/polk",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 2, 1795"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1849-06-15",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/polk",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 15, 1849"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Mecklenburg County, North Carolina",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/polk",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Mecklenburg County, North Carolina"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/polk",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/polk",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 11,
+          "start": {
+            "status": "known",
+            "value": "1845-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/polk",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1845"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1849-03-05",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/polk",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 5, 1849"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "taylor",
+      "name": "Zachary Taylor",
+      "birthDate": {
+        "status": "known",
+        "value": "1784-11-24",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taylor",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 24, 1784"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1850-07-09",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taylor",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 9, 1850"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "near Barboursville, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taylor",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "near Barboursville, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Whig",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taylor",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Whig"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taylor",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 12,
+          "start": {
+            "status": "known",
+            "value": "1849-03-05",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/taylor",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 5, 1849"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1850-07-09",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/taylor",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "July 9, 1850"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fillmore",
+      "name": "Millard Fillmore",
+      "birthDate": {
+        "status": "known",
+        "value": "1800-01-07",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fillmore",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 7, 1800"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1874-03-08",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fillmore",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 8, 1874"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Summerhill, New York",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fillmore",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Summerhill, New York"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Whig",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fillmore",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Whig"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Unitarian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fillmore",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Unitarian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 13,
+          "start": {
+            "status": "known",
+            "value": "1850-07-10",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/fillmore",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "July 10, 1850"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1853-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/fillmore",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1853"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pierce",
+      "name": "Franklin Pierce",
+      "birthDate": {
+        "status": "known",
+        "value": "1804-11-23",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/pierce",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 23, 1804"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1869-10-08",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/pierce",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 8, 1869"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Hillsborough (now Hillsboro), New Hampshire",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/pierce",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Hillsborough (now Hillsboro), New Hampshire"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/pierce",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/pierce",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 14,
+          "start": {
+            "status": "known",
+            "value": "1853-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/pierce",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1853"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1857-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/pierce",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1857"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "buchanan",
+      "name": "James Buchanan",
+      "birthDate": {
+        "status": "known",
+        "value": "1791-04-23",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/buchanan",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 23, 1791"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1868-06-01",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/buchanan",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 1, 1868"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Cove Gap (near Mercersburg), Pennsylvania",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/buchanan",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Cove Gap (near Mercersburg), Pennsylvania"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/buchanan",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/buchanan",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 15,
+          "start": {
+            "status": "known",
+            "value": "1857-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/buchanan",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1857"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1861-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/buchanan",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1861"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lincoln",
+      "name": "Abraham Lincoln",
+      "birthDate": {
+        "status": "known",
+        "value": "1809-02-12",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lincoln",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 12, 1809"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1865-04-15",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lincoln",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 15, 1865"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Hardin (now Larue) County, Kentucky",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lincoln",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Hardin (now Larue) County, Kentucky"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Whig; Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lincoln",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Whig; Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "No formal affiliation",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lincoln",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "No formal affiliation"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 16,
+          "start": {
+            "status": "known",
+            "value": "1861-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/lincoln",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1861"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1865-04-15",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/lincoln",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 15, 1865"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "johnson",
+      "name": "Andrew Johnson",
+      "birthDate": {
+        "status": "known",
+        "value": "1808-12-29",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/johnson",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 29, 1808"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1875-07-31",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/johnson",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 31, 1875"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Raleigh, North Carolina",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/johnson",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Raleigh, North Carolina"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat; Unionist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/johnson",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat; Unionist"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "No formal affiliation",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/johnson",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "No formal affiliation"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 17,
+          "start": {
+            "status": "known",
+            "value": "1865-04-15",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/johnson",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 15, 1865"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1869-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/johnson",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1869"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "grant",
+      "name": "Ulysses S. Grant",
+      "birthDate": {
+        "status": "known",
+        "value": "1822-04-27",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/grant",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 27, 1822"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1885-07-23",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/grant",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 23, 1885"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Point Pleasant, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/grant",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Point Pleasant, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/grant",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Methodist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/grant",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Methodist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 18,
+          "start": {
+            "status": "known",
+            "value": "1869-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/grant",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1869"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1877-03-05",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/grant",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 5, 1877"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hayes",
+      "name": "Rutherford B. Hayes",
+      "birthDate": {
+        "status": "known",
+        "value": "1822-10-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hayes",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 4, 1822"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1893-01-17",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hayes",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 17, 1893"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Delaware, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hayes",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Delaware, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hayes",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Methodist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hayes",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Methodist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 19,
+          "start": {
+            "status": "known",
+            "value": "1877-03-05",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/hayes",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 5, 1877"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1881-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/hayes",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1881"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "garfield",
+      "name": "James A. Garfield",
+      "birthDate": {
+        "status": "known",
+        "value": "1831-11-19",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/garfield",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 19, 1831"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1881-09-19",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/garfield",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "September 19, 1881"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Orange Township, Cuyahoga County, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/garfield",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Orange Township, Cuyahoga County, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/garfield",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Disciples of Christ",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/garfield",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Disciples of Christ"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 20,
+          "start": {
+            "status": "known",
+            "value": "1881-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/garfield",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1881"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1881-09-19",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/garfield",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "September 19, 1881"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "arthur",
+      "name": "Chester A. Arthur",
+      "birthDate": {
+        "status": "known",
+        "value": "1829-10-05",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/arthur",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 5, 1829"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1886-11-18",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/arthur",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 18, 1886"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Fairfield, Vermont",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/arthur",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Fairfield, Vermont"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/arthur",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/arthur",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 21,
+          "start": {
+            "status": "known",
+            "value": "1881-09-19",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/arthur",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "September 19, 1881"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1885-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/arthur",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1885"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cleveland",
+      "name": "Grover Cleveland",
+      "birthDate": {
+        "status": "known",
+        "value": "1837-03-18",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/cleveland",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 18, 1837"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1908-06-24",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/cleveland",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 24, 1908"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Caldwell, New Jersey",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/cleveland",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Caldwell, New Jersey"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/cleveland",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/cleveland",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 22,
+          "start": {
+            "status": "known",
+            "value": "1885-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/cleveland",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1885 March 4, 1893"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1889-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/cleveland",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1889 March 4, 1897"
+              }
+            ]
+          }
+        },
+        {
+          "number": 24,
+          "start": {
+            "status": "known",
+            "value": "1893-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/cleveland",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1885 March 4, 1893"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1897-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/cleveland",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1889 March 4, 1897"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bharrison",
+      "name": "Benjamin Harrison",
+      "birthDate": {
+        "status": "known",
+        "value": "1833-08-20",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bharrison",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 20, 1833"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1901-03-13",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bharrison",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 13, 1901"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "North Bend, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bharrison",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "North Bend, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bharrison",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bharrison",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 23,
+          "start": {
+            "status": "known",
+            "value": "1889-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/bharrison",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1889"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1893-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/bharrison",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1893"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mckinley",
+      "name": "William McKinley",
+      "birthDate": {
+        "status": "known",
+        "value": "1843-01-29",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/mckinley",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 29, 1843"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1901-09-14",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/mckinley",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "September 14, 1901"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Niles, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/mckinley",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Niles, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/mckinley",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Methodist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/mckinley",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Methodist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 25,
+          "start": {
+            "status": "known",
+            "value": "1897-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/mckinley",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1897"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1901-09-14",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/mckinley",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "September 14, 1901"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "roosevelt",
+      "name": "Theodore Roosevelt",
+      "birthDate": {
+        "status": "known",
+        "value": "1858-10-27",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/roosevelt",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 27, 1858"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1919-01-06",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/roosevelt",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 6, 1919"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "New York, New York",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/roosevelt",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "New York, New York"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/roosevelt",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Dutch Reformed",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/roosevelt",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Dutch Reformed"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 26,
+          "start": {
+            "status": "known",
+            "value": "1901-09-14",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/roosevelt",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "September 14, 1901"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1909-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/roosevelt",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1909"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "taft",
+      "name": "William Taft",
+      "birthDate": {
+        "status": "known",
+        "value": "1857-09-15",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taft",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "September 15, 1857"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1930-03-08",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taft",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 8, 1930"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Cincinnati, Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taft",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Cincinnati, Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taft",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Unitarian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/taft",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Unitarian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 27,
+          "start": {
+            "status": "known",
+            "value": "1909-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/taft",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1909"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1913-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/taft",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1913"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "wilson",
+      "name": "Woodrow Wilson",
+      "birthDate": {
+        "status": "known",
+        "value": "1856-12-28",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/wilson",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 28, 1856"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1924-02-03",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/wilson",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 3, 1924"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Staunton, Virginia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/wilson",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Staunton, Virginia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/wilson",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/wilson",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 28,
+          "start": {
+            "status": "known",
+            "value": "1913-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/wilson",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1913"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1921-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/wilson",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1921"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "harding",
+      "name": "Warren G. Harding",
+      "birthDate": {
+        "status": "known",
+        "value": "1865-11-02",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harding",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 2, 1865"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1923-08-02",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harding",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 2, 1923"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Corsica (now Blooming Grove), Ohio",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harding",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Corsica (now Blooming Grove), Ohio"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harding",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Baptist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/harding",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Baptist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 29,
+          "start": {
+            "status": "known",
+            "value": "1921-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/harding",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1921"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1923-08-02",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/harding",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "August 2, 1923"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "coolidge",
+      "name": "Calvin Coolidge",
+      "birthDate": {
+        "status": "known",
+        "value": "1872-07-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/coolidge",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 4, 1872"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1933-01-05",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/coolidge",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 5, 1933"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Plymouth Notch, Vermont",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/coolidge",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Plymouth Notch, Vermont"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/coolidge",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Congregationalist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/coolidge",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Congregationalist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 30,
+          "start": {
+            "status": "known",
+            "value": "1923-08-03",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/coolidge",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "August 3, 1923"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1929-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/coolidge",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1929"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hoover",
+      "name": "Herbert Hoover",
+      "birthDate": {
+        "status": "known",
+        "value": "1874-08-10",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hoover",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 10, 1874"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1964-10-20",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hoover",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 20, 1964"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "West Branch, Iowa",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hoover",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "West Branch, Iowa"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hoover",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Society of Friends (Quaker)",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/hoover",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Society of Friends (Quaker)"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 31,
+          "start": {
+            "status": "known",
+            "value": "1929-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/hoover",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1929"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1933-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/hoover",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1933"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fdroosevelt",
+      "name": "Franklin D. Roosevelt",
+      "birthDate": {
+        "status": "known",
+        "value": "1882-01-30",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fdroosevelt",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 30, 1882"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1945-04-12",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fdroosevelt",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 12, 1945"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Hyde Park, New York",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fdroosevelt",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Hyde Park, New York"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fdroosevelt",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/fdroosevelt",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 32,
+          "start": {
+            "status": "known",
+            "value": "1933-03-04",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/fdroosevelt",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "March 4, 1933"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1945-04-12",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/fdroosevelt",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 12, 1945"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "truman",
+      "name": "Harry S. Truman",
+      "birthDate": {
+        "status": "known",
+        "value": "1884-05-08",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/truman",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "May 8, 1884"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1972-12-26",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/truman",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 26, 1972"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Lamar, MO",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/truman",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Lamar, MO"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/truman",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Baptist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/truman",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Baptist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 33,
+          "start": {
+            "status": "known",
+            "value": "1945-04-12",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/truman",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "April 12, 1945"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1953-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/truman",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1953"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eisenhower",
+      "name": "Dwight D. Eisenhower",
+      "birthDate": {
+        "status": "known",
+        "value": "1890-10-14",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/eisenhower",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 14, 1890"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1969-03-28",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/eisenhower",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "March 28, 1969"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Denison, Texas",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/eisenhower",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Denison, Texas"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/eisenhower",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/eisenhower",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 34,
+          "start": {
+            "status": "known",
+            "value": "1953-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/eisenhower",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1953"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1961-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/eisenhower",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1961"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kennedy",
+      "name": "John F. Kennedy",
+      "birthDate": {
+        "status": "known",
+        "value": "1917-05-29",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/kennedy",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "May 29, 1917"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1963-11-22",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/kennedy",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 22, 1963"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Brookline, Massachusetts",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/kennedy",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Brookline, Massachusetts"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/kennedy",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Roman Catholic",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/kennedy",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Roman Catholic"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 35,
+          "start": {
+            "status": "known",
+            "value": "1961-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/kennedy",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1961"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1963-11-22",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/kennedy",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "November 22, 1963"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lbjohnson",
+      "name": "Lyndon B. Johnson",
+      "birthDate": {
+        "status": "known",
+        "value": "1908-08-27",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lbjohnson",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 27, 1908"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1973-01-22",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lbjohnson",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 22, 1973"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Johnson City, Texas",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lbjohnson",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Johnson City, Texas"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lbjohnson",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Disciples of Christ",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/lbjohnson",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Disciples of Christ"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 36,
+          "start": {
+            "status": "known",
+            "value": "1963-11-22",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/lbjohnson",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "November 22, 1963"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1969-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/lbjohnson",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1969"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nixon",
+      "name": "Richard Nixon",
+      "birthDate": {
+        "status": "known",
+        "value": "1913-01-09",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/nixon",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "January 9, 1913"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "1994-04-22",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/nixon",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "April 22, 1994"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Yorba Linda, California",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/nixon",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Yorba Linda, California"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/nixon",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Society of Friends (Quaker)",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/nixon",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Society of Friends (Quaker)"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 37,
+          "start": {
+            "status": "known",
+            "value": "1969-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/nixon",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1969"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1974-08-09",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/nixon",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "August 9, 1974"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ford",
+      "name": "Gerald Ford",
+      "birthDate": {
+        "status": "known",
+        "value": "1913-07-14",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/ford",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 14, 1913"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "2006-12-26",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/ford",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 26, 2006"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Omaha, Nebraska",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/ford",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Omaha, Nebraska"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/ford",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/ford",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 38,
+          "start": {
+            "status": "known",
+            "value": "1974-08-09",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/ford",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "August 9, 1974"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1977-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/ford",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1977"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "carter",
+      "name": "Jimmy Carter",
+      "birthDate": {
+        "status": "known",
+        "value": "1924-10-01",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/carter",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "October 1, 1924"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "2024-12-29",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/carter",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "December 29, 2024"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Plains, Georgia",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/carter",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Plains, Georgia"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democratic",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/carter",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democratic"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Baptist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/carter",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Baptist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 39,
+          "start": {
+            "status": "known",
+            "value": "1977-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/carter",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1977"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1981-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/carter",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1981"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "reagan",
+      "name": "Ronald Reagan",
+      "birthDate": {
+        "status": "known",
+        "value": "1911-02-06",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/reagan",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "February 6, 1911"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "2004-06-05",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/reagan",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 5, 2004"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Tampico, Illinois",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/reagan",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Tampico, Illinois"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/reagan",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Christian Church",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/reagan",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Christian Church"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 40,
+          "start": {
+            "status": "known",
+            "value": "1981-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/reagan",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1981"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1989-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/reagan",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1989"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bush",
+      "name": "George H. W. Bush",
+      "birthDate": {
+        "status": "known",
+        "value": "1924-06-12",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bush",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 12, 1924"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "known",
+        "value": "2018-11-30",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bush",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 30, 2018"
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Milton, Massachusetts",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bush",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Milton, Massachusetts"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bush",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Episcopalian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/bush",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Episcopalian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 41,
+          "start": {
+            "status": "known",
+            "value": "1989-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/bush",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1989"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "1993-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/bush",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1993"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "clinton",
+      "name": "Bill Clinton",
+      "birthDate": {
+        "status": "known",
+        "value": "1946-08-19",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/clinton",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 19, 1946"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "missing",
+        "reason": "not supplied by source",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/clinton",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": ""
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Hope, Arkansas",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/clinton",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Hope, Arkansas"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/clinton",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Baptist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/clinton",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Baptist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 42,
+          "start": {
+            "status": "known",
+            "value": "1993-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/clinton",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 1993"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "2001-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/clinton",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2001"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gwbush",
+      "name": "George W. Bush",
+      "birthDate": {
+        "status": "known",
+        "value": "1946-07-06",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/gwbush",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "July 6, 1946"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "missing",
+        "reason": "not supplied by source",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/gwbush",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": ""
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "New Haven, Connecticut",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/gwbush",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "New Haven, Connecticut"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/gwbush",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Methodist",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/gwbush",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Methodist"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 43,
+          "start": {
+            "status": "known",
+            "value": "2001-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/gwbush",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2001"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "2009-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/gwbush",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2009"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "obama",
+      "name": "Barack Obama",
+      "birthDate": {
+        "status": "known",
+        "value": "1961-08-04",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/obama",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "August 4, 1961"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "missing",
+        "reason": "not supplied by source",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/obama",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": ""
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Honolulu, Hawaii",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/obama",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Honolulu, Hawaii"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/obama",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Christian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/obama",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Christian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 44,
+          "start": {
+            "status": "known",
+            "value": "2009-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/obama",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2009"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "2017-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/obama",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2017"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "trump",
+      "name": "Donald Trump",
+      "birthDate": {
+        "status": "known",
+        "value": "1946-06-14",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/trump",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "June 14, 1946"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "missing",
+        "reason": "not supplied by source",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/trump",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": ""
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "New York, New York",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/trump",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "New York, New York"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Republican",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/trump",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Republican"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Presbyterian",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/trump",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Presbyterian"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 45,
+          "start": {
+            "status": "known",
+            "value": "2017-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/trump",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2017 January 20, 2025"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "2021-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/trump",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2021"
+              }
+            ]
+          }
+        },
+        {
+          "number": 47,
+          "start": {
+            "status": "known",
+            "value": "2025-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/trump",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2017 January 20, 2025"
+              }
+            ]
+          },
+          "end": {
+            "status": "missing",
+            "reason": "not supplied by source",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/trump",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2021"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "biden",
+      "name": "Joe Biden",
+      "birthDate": {
+        "status": "known",
+        "value": "1942-11-20",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/biden",
+            "locator": "Fast Facts / Birth Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "November 20, 1942"
+          }
+        ]
+      },
+      "deathDate": {
+        "status": "missing",
+        "reason": "not supplied by source",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/biden",
+            "locator": "Fast Facts / Death Date",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": ""
+          }
+        ]
+      },
+      "birthPlace": {
+        "status": "known",
+        "value": "Scranton, Pennsylvania",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/biden",
+            "locator": "Fast Facts / Birth Place",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Scranton, Pennsylvania"
+          }
+        ]
+      },
+      "partySummary": {
+        "status": "known",
+        "value": "Democrat",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/biden",
+            "locator": "Fast Facts / Political Party",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Democrat"
+          }
+        ]
+      },
+      "religionSummary": {
+        "status": "known",
+        "value": "Roman Catholic",
+        "sources": [
+          {
+            "url": "https://millercenter.org/president/biden",
+            "locator": "Fast Facts / Religion",
+            "retrievedAt": "2026-10-03T08:15:03.868Z",
+            "raw": "Roman Catholic"
+          }
+        ]
+      },
+      "presidencies": [
+        {
+          "number": 46,
+          "start": {
+            "status": "known",
+            "value": "2021-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/biden",
+                "locator": "Fast Facts / Inauguration Date",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2021"
+              }
+            ]
+          },
+          "end": {
+            "status": "known",
+            "value": "2025-01-20",
+            "sources": [
+              {
+                "url": "https://millercenter.org/president/biden",
+                "locator": "Fast Facts / Date Ended",
+                "retrievedAt": "2026-10-03T08:15:03.868Z",
+                "raw": "January 20, 2025"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

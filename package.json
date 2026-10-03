@@ -2,16 +2,19 @@
   "name": "coinciden-tally",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && node dist/scripts/copy-data.js",
     "typecheck": "tsc -p tsconfig.json",
     "test": "pnpm build && node --test dist/tests/*.test.js",
-    "lint": "eslint src tests eslint.config.ts"
+    "lint": "eslint src tests scripts eslint.config.ts",
+    "explore": "pnpm build && node dist/scripts/explore.js",
+    "import:presidents": "pnpm build && node dist/scripts/import-presidents.js"
   },
   "exports": {
-    ".": "./dist/src/index.js"
+    ".": "./dist/src/index.js",
+    "./presidents": "./dist/src/domains/presidents/index.js"
   },
   "types": "./dist/src/index.d.ts",
-  "files": ["dist/src", "README.md"],
+  "files": ["dist/src", "dist/data", "README.md"],
   "keywords": [],
   "author": "",
   "license": "MIT",

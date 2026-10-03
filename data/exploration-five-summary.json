@@ -1,0 +1,30 @@
+{
+  "datasetRetrievedAt": "2026-10-03T08:15:03.868Z",
+  "command": "pnpm explore adams monroe grant hoover carter --max-groups=1300000",
+  "ids": ["adams", "monroe", "grant", "hoover", "carter"],
+  "detectionCount": 16,
+  "totalOtherGroups": 1221758,
+  "selectedResults": [
+    {
+      "expression": "religionSummary",
+      "relation": "allDistinct",
+      "signature": {"parameters": {}, "class": {}},
+      "matches": 373820,
+      "eligibleOtherGroups": 1221758
+    },
+    {
+      "expression": "interval(year(birthDate), year(firstStart))",
+      "relation": "allDistinct",
+      "signature": {"parameters": {}, "class": {}},
+      "matches": 859691,
+      "eligibleOtherGroups": 1221758
+    },
+    {
+      "expression": "presidencyPeriods",
+      "relation": "allEqual",
+      "signature": {"parameters": {"value": 1}, "class": {}},
+      "matches": 962597,
+      "eligibleOtherGroups": 1221758
+    }
+  ]
+}
